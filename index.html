@@ -26,8 +26,8 @@ header {
 }
 
 header img {
-  max-width: 855px;
-  width: 85%;
+  max-width: 427px;
+  width: 42.5%;
   display: block;
   margin: 0 auto;
 }
@@ -444,7 +444,7 @@ footer { background: #8B4513; color: white; text-align: center; padding: 20px; f
 @media (max-width: 480px) {
   .grid { grid-template-columns: 1fr; gap: 12px 8px; }
   header { padding: 15px; }
-  header img { width: 95%; }
+  header img { width: 65%; max-width: 220px; }
   .cart-icon-container { right: 10px; top: 10px; }
   nav { gap: 6px; margin-top: 10px; }
   nav a { font-size: 12px; padding: 5px 8px; margin: 3px 2px; }
@@ -730,57 +730,83 @@ footer { background: #8B4513; color: white; text-align: center; padding: 20px; f
   <h2>Kids Collection</h2>
   <div class="grid">
     <div class="card" onclick="showDetails('kids1')">
-      <img src="kidsdress.jpg" alt="Kids Dress">
-      <div class="card-icon">👗</div>
-      <div class="card-title">Kids Dress</div>
+      <img src="kidstraditional.jpg" alt="Kids Traditional">
+      <div class="card-icon">🧵</div>
+      <div class="card-title">Kids Traditional</div>
     </div>
     <div class="card" onclick="showDetails('kids2')">
-      <img src="kidsshirt.jpg" alt="Kids Shirt">
-      <div class="card-icon">👕</div>
-      <div class="card-title">Kids Shirt</div>
+      <img src="kidsethnicwear.jpg" alt="Kids Ethnic Wear">
+      <div class="card-icon">🌸</div>
+      <div class="card-title">Kids Ethnic Wear</div>
     </div>
     <div class="card" onclick="showDetails('kids3')">
-      <img src="kidswear.jpg" alt="Kids Wear">
-      <div class="card-icon">🧸</div>
-      <div class="card-title">Kids Wear</div>
+      <img src="kidsdenim.jpg" alt="Kids Denim">
+      <div class="card-icon">👖</div>
+      <div class="card-title">Kids Denim</div>
+    </div>
+    <div class="card" onclick="showDetails('kids4')">
+      <img src="kidsshirt.jpg" alt="Kids Shirt">
+      <div class="card-icon">👔</div>
+      <div class="card-title">Kids Shirt</div>
+    </div>
+    <div class="card" onclick="showDetails('kids5')">
+      <img src="kidsfrok.jpg" alt="Kids Frok">
+      <div class="card-icon">🎀</div>
+      <div class="card-title">Kids Frok</div>
     </div>
   </div>
 
   <div id="kids1" class="details">
     <span class="close-details" onclick="closeDetails('kids1')">×</span>
-    <h3>Kids Dress</h3>
-    <p>Comfortable and colorful kids dress for daily wear and special occasions.</p>
+    <h3>Kids Traditional</h3>
+    <p>Traditional kids wear with comfortable fabric and festive style.</p>
     <table>
-      <tr data-product="Kids Dress" data-grade="Regular" data-price="600">
-        <td>Regular</td>
-        <td>₹600</td>
-        <td class="cart-cell"><div class="cart-cell-inner"><input type="number" class="quantity-input row-qty" value="1" min="1"><button class="add-to-cart-btn" onclick="addRowToCart(this)">Add to Cart</button></div></td>
+      <tr data-product="Kids Traditional" data-grade="Regular" data-price="650">
+        <td>Regular</td><td>₹650</td><td class="cart-cell"><div class="cart-cell-inner"><input type="number" class="quantity-input row-qty" value="1" min="1"><button class="add-to-cart-btn" onclick="addRowToCart(this)">Add to Cart</button></div></td>
       </tr>
     </table>
   </div>
 
   <div id="kids2" class="details">
     <span class="close-details" onclick="closeDetails('kids2')">×</span>
-    <h3>Kids Shirt</h3>
-    <p>Soft and stylish shirt for kids, ideal for school and outings.</p>
+    <h3>Kids Ethnic Wear</h3>
+    <p>Elegant ethnic wear for kids, perfect for celebrations and family functions.</p>
     <table>
-      <tr data-product="Kids Shirt" data-grade="Standard" data-price="500">
-        <td>Standard</td>
-        <td>₹500</td>
-        <td class="cart-cell"><div class="cart-cell-inner"><input type="number" class="quantity-input row-qty" value="1" min="1"><button class="add-to-cart-btn" onclick="addRowToCart(this)">Add to Cart</button></div></td>
+      <tr data-product="Kids Ethnic Wear" data-grade="Premium" data-price="800">
+        <td>Premium</td><td>₹800</td><td class="cart-cell"><div class="cart-cell-inner"><input type="number" class="quantity-input row-qty" value="1" min="1"><button class="add-to-cart-btn" onclick="addRowToCart(this)">Add to Cart</button></div></td>
       </tr>
     </table>
   </div>
 
   <div id="kids3" class="details">
     <span class="close-details" onclick="closeDetails('kids3')">×</span>
-    <h3>Kids Wear</h3>
-    <p>Comfortable kids wear designed for playtime and casual comfort.</p>
+    <h3>Kids Denim</h3>
+    <p>Durable and stylish denim wear for everyday comfort and play.</p>
     <table>
-      <tr data-product="Kids Wear" data-grade="Premium" data-price="850">
-        <td>Premium</td>
-        <td>₹850</td>
-        <td class="cart-cell"><div class="cart-cell-inner"><input type="number" class="quantity-input row-qty" value="1" min="1"><button class="add-to-cart-btn" onclick="addRowToCart(this)">Add to Cart</button></div></td>
+      <tr data-product="Kids Denim" data-grade="Standard" data-price="750">
+        <td>Standard</td><td>₹750</td><td class="cart-cell"><div class="cart-cell-inner"><input type="number" class="quantity-input row-qty" value="1" min="1"><button class="add-to-cart-btn" onclick="addRowToCart(this)">Add to Cart</button></div></td>
+      </tr>
+    </table>
+  </div>
+
+  <div id="kids4" class="details">
+    <span class="close-details" onclick="closeDetails('kids4')">×</span>
+    <h3>Kids Shirt</h3>
+    <p>Soft kids shirt with a comfortable fit for school and outings.</p>
+    <table>
+      <tr data-product="Kids Shirt" data-grade="Regular" data-price="500">
+        <td>Regular</td><td>₹500</td><td class="cart-cell"><div class="cart-cell-inner"><input type="number" class="quantity-input row-qty" value="1" min="1"><button class="add-to-cart-btn" onclick="addRowToCart(this)">Add to Cart</button></div></td>
+      </tr>
+    </table>
+  </div>
+
+  <div id="kids5" class="details">
+    <span class="close-details" onclick="closeDetails('kids5')">×</span>
+    <h3>Kids Frok</h3>
+    <p>Pretty frok for kids with a charming look and comfortable stitching.</p>
+    <table>
+      <tr data-product="Kids Frok" data-grade="Premium" data-price="700">
+        <td>Premium</td><td>₹700</td><td class="cart-cell"><div class="cart-cell-inner"><input type="number" class="quantity-input row-qty" value="1" min="1"><button class="add-to-cart-btn" onclick="addRowToCart(this)">Add to Cart</button></div></td>
       </tr>
     </table>
   </div>
