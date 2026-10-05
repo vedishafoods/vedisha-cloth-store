@@ -413,7 +413,7 @@ footer { background: #8B4513; color: white; text-align: center; padding: 20px; f
 @media (max-width: 700px) { .pay-option { padding: 12px; } }
 @media (max-width: 480px) { .pay-amount { font-size: 18px; } .upi-pay-btn, .pay-wa-btn { display: block; margin: 8px 0 0; } }
 @media (max-width: 1180px) { .grid { grid-template-columns: repeat(4, minmax(180px, 1fr)); } h2 { font-size: 28px; } }
-@media (max-width: 940px) { .grid { grid-template-columns: repeat(3, minmax(150px, 1fr)); } h2 { font-size: 26px; margin: 0 0 30px; } .section { padding: 30px 15px; } .form-section { margin: 30px 15px; padding: 20px; } }
+@media (max-width: 940px) { .grid { grid-template-columns: repeat(3, minmax(150px, 1fr)); } h2 { font-size: 26px; margin: 0 0 30px; } .section { padding: 30px 15px; } .form-section { margin: 30px 15px; } }
 @media (max-width: 700px) {
   .grid { grid-template-columns: repeat(2, minmax(120px, 1fr)); gap: 15px 12px; }
   header img { width: 70%; max-width: 300px; }
@@ -492,8 +492,7 @@ footer { background: #8B4513; color: white; text-align: center; padding: 20px; f
 <div id="home" class="section">
   <h2>Welcome to Vedisha Cloth Store</h2>
   <div class="about">
-    <p>Welcome to Vedisha, your premier destination for exquisite ladies and kids clothing. We specialize in offering high-quality, fashionable, and comfortable clothing for every occasion. Our collection is carefully selected to ensure the best quality and aesthetic appeal.</p>
-    <p>Each piece in our collection is carefully selected to ensure the best quality and aesthetic appeal. We believe in celebrating individuality and self-expression through fashion, offering a wide range of styles that cater to different tastes and preferences.</p>
+    <p>Welcome to Vedisha, your premier destination for exquisite ladies and kids clothing. We specialize in offering high-quality, fashionable, and comfortable clothing for every occasion. Our collec[... omitted for brevity ...]
   </div>
 </div>
 
@@ -816,6 +815,8 @@ footer { background: #8B4513; color: white; text-align: center; padding: 20px; f
   <h2>Contact Us</h2>
   <div class="contact-box">
     <p>Reach us on WhatsApp for orders, custom queries, and quick support.</p>
+    <p><strong>Email:</strong> <a href="mailto:vedprish20162021@gmail.com">vedprish20162021@gmail.com</a></p>
+    <p><strong>Contact Number:</strong> <a href="tel:+919890798935">9890798935</a></p>
     <a class="wa-btn" href="https://wa.me/919999999999" target="_blank" rel="noopener">Chat on WhatsApp</a>
   </div>
 </div>
@@ -926,7 +927,7 @@ function renderCart() {
   container.innerHTML = cart.map((item, index) => {
     const itemTotal = item.price * item.qty;
     total += itemTotal;
-    return `<div class="cart-item"><div class="cart-item-info"><div class="cart-item-name">${item.product}</div><div class="cart-item-details">${item.grade} | Qty: ${item.qty} | ₹${item.price} each</div></div><div class="cart-item-actions"><strong>₹${itemTotal}</strong><button class="remove-item-btn" onclick="removeItem(${index})">Remove</button></div></div>`;
+    return `<div class="cart-item"><div class="cart-item-info"><div class="cart-item-name">${item.product}</div><div class="cart-item-details">${item.grade} | Qty: ${item.qty} | ₹${item.price} each</div></div><div class="cart-item-actions"><div>₹${itemTotal}</div><button class="remove-item-btn" onclick="removeItem(${index})">Remove</button></div></div>`;
   }).join('');
   document.getElementById('cartTotal').textContent = total;
 }
