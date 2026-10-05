@@ -470,6 +470,7 @@ footer { background: #8B4513; color: white; text-align: center; padding: 20px; f
   .whatsapp-float { padding: 10px 14px; font-size: 13px; right: 10px; bottom: 10px; }
   .modal-content { margin: 30% auto; padding: 20px; }
 }
+.modal-content .form-section { margin: 0; padding: 0; box-shadow: none; max-width: 100%; }
 </style>
 </head>
 <body>
@@ -485,6 +486,7 @@ footer { background: #8B4513; color: white; text-align: center; padding: 20px; f
     <a onclick="scrollToSection('about')">About</a>
     <a onclick="scrollToSection('ladies')">Ladies</a>
     <a onclick="scrollToSection('kids')">Kids</a>
+    <a onclick="openOrderForm()">Order Enquiry</a>
     <a onclick="scrollToSection('contact')">Contact</a>
   </nav>
 </header>
@@ -820,7 +822,9 @@ footer { background: #8B4513; color: white; text-align: center; padding: 20px; f
   </div>
 </div>
 
-<div id="orderForm" class="section">
+<div id="orderForm" class="modal">
+  <div class="modal-content">
+    <span class="close-modal" onclick="closeOrderForm()">×</span>
   <div class="form-section">
     <h3>Order Enquiry Form</h3>
     <div class="form-info">Fill this form to send your order enquiry.</div>
@@ -840,6 +844,7 @@ footer { background: #8B4513; color: white; text-align: center; padding: 20px; f
       </div>
       <button class="form-btn" type="submit">Submit Enquiry</button>
     </form>
+  </div>
   </div>
 </div>
 
@@ -957,6 +962,13 @@ function sendPaymentWhatsApp() {
 function markPaid() {
   alert('Thank you! Your payment will be verified shortly.');
 }
+function openOrderForm() {
+  document.getElementById('formSuccess').style.display = 'none';
+  document.getElementById('orderForm').style.display = 'block';
+}
+function closeOrderForm() {
+  document.getElementById('orderForm').style.display = 'none';
+}
 function submitOrderForm(event) {
   event.preventDefault();
   document.getElementById('formSuccess').style.display = 'block';
@@ -968,6 +980,8 @@ window.addEventListener('click', (e) => {
   const paymentModal = document.getElementById('paymentModal');
   if (e.target === cartModal) cartModal.style.display = 'none';
   if (e.target === paymentModal) paymentModal.style.display = 'none';
+  const orderModal = document.getElementById('orderForm');
+  if (e.target === orderModal) orderModal.style.display = 'none';
 });
 </script>
 </body>
