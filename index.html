@@ -26,8 +26,8 @@ header {
 }
 
 header img {
-  max-width: 427px;
-  width: 42.5%;
+  max-width: 855px;
+  width: 85%;
   display: block;
   margin: 0 auto;
 }
@@ -92,7 +92,9 @@ nav a:hover {
   background: #FFC700;
 }
 
-.section { padding: 40px 20px; }
+.section {
+  padding: 40px 20px;
+}
 
 h2, h3 {
   font-family: 'Cormorant Garamond', 'Aptos Slab', serif;
@@ -101,9 +103,22 @@ h2, h3 {
   letter-spacing: 0.3px;
 }
 
-h2 { text-align: center; font-size: 31px; margin: 0 0 40px; }
-h3 { font-size: 24px; }
-.about { max-width: 1280px; margin: 0 auto; line-height: 1.7; }
+h2 {
+  text-align: center;
+  font-size: 31px;
+  margin: 0 0 40px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+.about {
+  max-width: 1280px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
 .about p {
   margin: 0 0 18px;
   text-align: left;
@@ -112,6 +127,7 @@ h3 { font-size: 24px; }
   color: #1a1a1a;
   max-width: 100%;
 }
+
 .grid {
   display: grid;
   grid-template-columns: repeat(5, minmax(200px, 1fr));
@@ -119,6 +135,7 @@ h3 { font-size: 24px; }
   max-width: 1280px;
   margin: 0 auto;
 }
+
 .card {
   background: #fff;
   border-radius: 12px;
@@ -129,8 +146,16 @@ h3 { font-size: 24px; }
   border: 1px solid rgba(0,0,0,0.04);
   position: relative;
 }
-.card:hover { transform: translateY(-2px); }
-.card img { width: 100%; height: 220px; object-fit: cover; display: block; background: #f5f5f5; }
+.card:hover {
+  transform: translateY(-2px);
+}
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+  background: #f5f5f5;
+}
 .card-title {
   padding: 16px 12px;
   text-align: center;
@@ -163,8 +188,13 @@ h3 { font-size: 24px; }
   box-shadow: 0 2px 8px rgba(0,0,0,.1);
   position: relative;
 }
-.details p { font-size: 18px; }
-.details h3 { margin-top: 0; padding-right: 40px; }
+.details p {
+  font-size: 18px;
+}
+.details h3 {
+  margin-top: 0;
+  padding-right: 40px;
+}
 .close-details {
   position: absolute;
   right: 20px;
@@ -176,12 +206,33 @@ h3 { font-size: 24px; }
   line-height: 1;
   transition: all 0.3s ease;
 }
-.close-details:hover { color: #999; transform: scale(1.2); }
-.active { display: block; }
-table { width: 100%; border-collapse: collapse; font-size: 18px; margin-bottom: 15px; }
-th, td { border: 1px solid #ddd; padding: 10px; }
-.cart-cell { white-space: nowrap; }
-.cart-cell .cart-cell-inner { display: flex; gap: 8px; align-items: center; justify-content: center; flex-wrap: wrap; }
+.close-details:hover {
+  color: #999;
+  transform: scale(1.2);
+}
+.active {
+  display: block;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+.cart-cell {
+  white-space: nowrap;
+}
+.cart-cell .cart-cell-inner {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 .quantity-input {
   width: 64px;
   padding: 8px;
@@ -204,8 +255,14 @@ th, td { border: 1px solid #ddd; padding: 10px; }
   border: none;
   cursor: pointer;
 }
-.add-to-cart-btn:hover { background: #6B3410; transform: translateY(-2px); box-shadow: 0 4px 12px rgba(139, 69, 19, 0.4); }
-.add-to-cart-btn.added { background: #25D366; }
+.add-to-cart-btn:hover {
+  background: #6B3410;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(139, 69, 19, 0.4);
+}
+.add-to-cart-btn.added {
+  background: #25D366;
+}
 .wa-btn {
   display: inline-block;
   background: #25D366;
@@ -218,7 +275,11 @@ th, td { border: 1px solid #ddd; padding: 10px; }
   font-weight: 600;
   transition: all 0.3s ease;
 }
-.wa-btn:hover { background: #20ba5e; transform: translateY(-2px); box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4); }
+.wa-btn:hover {
+  background: #20ba5e;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+}
 .contact-box {
   max-width: 700px;
   margin: auto;
@@ -228,7 +289,9 @@ th, td { border: 1px solid #ddd; padding: 10px; }
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0,0,0,.1);
 }
-.contact-box p { font-size: 18px; }
+.contact-box p {
+  font-size: 18px;
+}
 .form-section {
   max-width: 700px;
   margin: 40px auto;
@@ -237,8 +300,13 @@ th, td { border: 1px solid #ddd; padding: 10px; }
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0,0,0,.1);
 }
-.form-section h3 { margin-top: 0; color: #8B4513; }
-.form-group { margin-bottom: 18px; }
+.form-section h3 {
+  margin-top: 0;
+  color: #8B4513;
+}
+.form-group {
+  margin-bottom: 18px;
+}
 .form-group label {
   display: block;
   margin-bottom: 6px;
@@ -259,8 +327,15 @@ th, td { border: 1px solid #ddd; padding: 10px; }
 }
 .form-group input:focus,
 .form-group textarea:focus,
-.form-group select:focus { outline: none; border-color: #8B4513; box-shadow: 0 0 5px rgba(139, 69, 19, 0.3); }
-.form-group textarea { resize: vertical; min-height: 120px; }
+.form-group select:focus {
+  outline: none;
+  border-color: #8B4513;
+  box-shadow: 0 0 5px rgba(139, 69, 19, 0.3);
+}
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
 .form-btn {
   background: #8B4513;
   color: white;
@@ -273,8 +348,16 @@ th, td { border: 1px solid #ddd; padding: 10px; }
   transition: all 0.3s ease;
   width: 100%;
 }
-.form-btn:hover { background: #6B3410; transform: translateY(-2px); box-shadow: 0 4px 12px rgba(139, 69, 19, 0.4); }
-.form-btn:disabled { background: #ccc; cursor: not-allowed; transform: none; }
+.form-btn:hover {
+  background: #6B3410;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(139, 69, 19, 0.4);
+}
+.form-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  transform: none;
+}
 .success-message {
   display: none;
   background: #d4edda;
@@ -294,7 +377,13 @@ th, td { border: 1px solid #ddd; padding: 10px; }
   font-size: 14px;
   border-left: 4px solid #8B4513;
 }
-footer { background: #8B4513; color: white; text-align: center; padding: 20px; font-size: 18px; }
+footer {
+  background: #8B4513;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 18px;
+}
 .whatsapp-float {
   position: fixed;
   right: 20px;
@@ -309,7 +398,11 @@ footer { background: #8B4513; color: white; text-align: center; padding: 20px; f
   transition: all 0.3s ease;
   z-index: 999;
 }
-.whatsapp-float:hover { background: #20ba5e; transform: scale(1.1); }
+.whatsapp-float:hover {
+  background: #20ba5e;
+  transform: scale(1.1);
+}
+/* Modal Styles */
 .modal {
   display: none;
   position: fixed;
@@ -340,8 +433,14 @@ footer { background: #8B4513; color: white; text-align: center; padding: 20px; f
   cursor: pointer;
   transition: all 0.3s ease;
 }
-.close-modal:hover { color: #999; transform: scale(1.2); }
-.modal h3 { margin-top: 0; }
+.close-modal:hover {
+  color: #999;
+  transform: scale(1.2);
+}
+.modal h3 {
+  margin-top: 0;
+}
+/* Cart Modal Styles */
 .cart-item {
   display: flex;
   justify-content: space-between;
@@ -352,10 +451,23 @@ footer { background: #8B4513; color: white; text-align: center; padding: 20px; f
   margin-bottom: 10px;
   background: #f9f9f9;
 }
-.cart-item-info { flex-grow: 1; }
-.cart-item-name { font-weight: 600; color: #8B4513; margin-bottom: 4px; }
-.cart-item-details { font-size: 14px; color: #666; }
-.cart-item-actions { display: flex; gap: 8px; align-items: center; }
+.cart-item-info {
+  flex-grow: 1;
+}
+.cart-item-name {
+  font-weight: 600;
+  color: #8B4513;
+  margin-bottom: 4px;
+}
+.cart-item-details {
+  font-size: 14px;
+  color: #666;
+}
+.cart-item-actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
 .remove-item-btn {
   background: #ff4444;
   color: white;
@@ -366,7 +478,9 @@ footer { background: #8B4513; color: white; text-align: center; padding: 20px; f
   font-size: 12px;
   transition: all 0.3s ease;
 }
-.remove-item-btn:hover { background: #cc0000; }
+.remove-item-btn:hover {
+  background: #cc0000;
+}
 .cart-summary {
   background: #f0f0f0;
   padding: 15px;
@@ -374,8 +488,18 @@ footer { background: #8B4513; color: white; text-align: center; padding: 20px; f
   margin: 20px 0;
   border-left: 4px solid #8B4513;
 }
-.cart-total { font-size: 20px; font-weight: bold; color: #8B4513; text-align: right; margin-top: 10px; }
-.empty-cart { text-align: center; padding: 40px 20px; color: #666; }
+.cart-total {
+  font-size: 20px;
+  font-weight: bold;
+  color: #8B4513;
+  text-align: right;
+  margin-top: 10px;
+}
+.empty-cart {
+  text-align: center;
+  padding: 40px 20px;
+  color: #666;
+}
 .checkout-btn {
   background: #25D366;
   color: white;
@@ -389,7 +513,12 @@ footer { background: #8B4513; color: white; text-align: center; padding: 20px; f
   transition: all 0.3s ease;
   margin-top: 15px;
 }
-.checkout-btn:hover { background: #20ba5e; transform: translateY(-2px); box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4); }
+.checkout-btn:hover {
+  background: #20ba5e;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+}
+/* Payment Modal Styles */
 .pay-option {
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -412,11 +541,22 @@ footer { background: #8B4513; color: white; text-align: center; padding: 20px; f
 .pay-option input { width: 100%; box-sizing: border-box; padding: 10px; margin: 6px 0; border: 1px solid #ccc; border-radius: 6px; font-family: inherit; }
 @media (max-width: 700px) { .pay-option { padding: 12px; } }
 @media (max-width: 480px) { .pay-amount { font-size: 18px; } .upi-pay-btn, .pay-wa-btn { display: block; margin: 8px 0 0; } }
-@media (max-width: 1180px) { .grid { grid-template-columns: repeat(4, minmax(180px, 1fr)); } h2 { font-size: 28px; } }
-@media (max-width: 940px) { .grid { grid-template-columns: repeat(3, minmax(150px, 1fr)); } h2 { font-size: 26px; margin: 0 0 30px; } .section { padding: 30px 15px; } .form-section { margin: 30px 15px; padding: 20px; } }
+
+@media (max-width: 1180px) {
+  .grid { grid-template-columns: repeat(4, minmax(180px, 1fr)); }
+  h2 { font-size: 28px; }
+}
+
+@media (max-width: 940px) {
+  .grid { grid-template-columns: repeat(3, minmax(150px, 1fr)); }
+  h2 { font-size: 26px; margin: 0 0 30px; }
+  .section { padding: 30px 15px; }
+  .form-section { margin: 30px 15px; padding: 20px; }
+}
+
 @media (max-width: 700px) {
   .grid { grid-template-columns: repeat(2, minmax(120px, 1fr)); gap: 15px 12px; }
-  header img { width: 70%; max-width: 300px; }
+  header img { width: 90%; }
   .cart-icon-container { right: 15px; top: 15px; }
   nav { gap: 8px; margin-top: 12px; }
   nav a { font-size: 13px; padding: 6px 10px; margin: 4px 2px; }
@@ -444,7 +584,7 @@ footer { background: #8B4513; color: white; text-align: center; padding: 20px; f
 @media (max-width: 480px) {
   .grid { grid-template-columns: 1fr; gap: 12px 8px; }
   header { padding: 15px; }
-  header img { width: 65%; max-width: 220px; }
+  header img { width: 95%; }
   .cart-icon-container { right: 10px; top: 10px; }
   nav { gap: 6px; margin-top: 10px; }
   nav a { font-size: 12px; padding: 5px 8px; margin: 3px 2px; }
@@ -492,4 +632,238 @@ footer { background: #8B4513; color: white; text-align: center; padding: 20px; f
 <div id="home" class="section">
   <h2>Welcome to Vedisha Cloth Store</h2>
   <div class="about">
-    <p>Welcome to Vedisha, your premier destination for exquisite ladies and kids clothing. We specialize in offering high-quality, fashionable, and comfortable clothing for every occasion. Our collec[... omitted ...]
+    <p>Welcome to Vedisha, your premier destination for exquisite ladies and kids clothing. We specialize in offering high-quality, fashionable, and comfortable clothing for every occasion. Our collection is carefully selected to ensure the best quality and aesthetic appeal.</p>
+    <p>Each piece in our collection is carefully selected to ensure the best quality and aesthetic appeal. We believe in celebrating individuality and self-expression through fashion, offering a wide range of styles that cater to different tastes and preferences.</p>
+  </div>
+</div>
+
+<div id="about" class="section">
+  <h2>About Our Store</h2>
+  <div class="about">
+    <p><strong>Our Mission:</strong> To provide affordable, high-quality, and fashionable clothing that brings joy and confidence to our customers.</p>
+    <p><strong>Our Values:</strong> We are committed to quality, customer satisfaction, and sustainable fashion practices. Every piece is selected with care to ensure it meets our high standards.</p>
+    <p><strong>Why Choose Us:</strong></p>
+    <ul>
+      <li>Premium quality fabrics and designs</li>
+      <li>Wide variety for all ages and occasions</li>
+      <li>Competitive pricing</li>
+      <li>Fast and reliable delivery</li>
+      <li>Excellent customer service</li>
+    </ul>
+  </div>
+</div>
+
+<div id="ladies" class="section">
+  <h2>Ladies Collection</h2>
+  <div class="grid">
+    <div class="card" onclick="showDetails('saree1')">
+      <img src="traditionalsaree.jpg" alt="Traditional Saree">
+      <div class="card-icon">🥻</div>
+      <div class="card-title">Traditional Saree</div>
+    </div>
+    <div class="card" onclick="showDetails('saree2')">
+      <img src="silksaree.jpg" alt="Silk Saree">
+      <div class="card-icon">✨</div>
+      <div class="card-title">Silk Saree</div>
+    </div>
+    <div class="card" onclick="showDetails('suit1')">
+      <img src="kurtasuite.jpg" alt="Kurta Suit">
+      <div class="card-icon">👗</div>
+      <div class="card-title">Kurta Suit</div>
+    </div>
+    <div class="card" onclick="showDetails('dress1')">
+      <img src="casualdress.jpg" alt="Casual Dress">
+      <div class="card-icon">👚</div>
+      <div class="card-title">Casual Dress</div>
+    </div>
+    <div class="card" onclick="showDetails('lehenga1')">
+      <img src="lehnga.jpg" alt="Lehenga">
+      <div class="card-icon">💃</div>
+      <div class="card-title">Lehenga</div>
+    </div>
+    <div class="card" onclick="showDetails('kurti1')">
+      <img src="shortkurti.jpg" alt="Short Kurti">
+      <div class="card-icon">👕</div>
+      <div class="card-title">Short Kurti</div>
+    </div>
+    <div class="card" onclick="showDetails('coordset1')">
+      <img src="coordset.jpg" alt="Coord Set">
+      <div class="card-icon">🌟</div>
+      <div class="card-title">Coord Set</div>
+    </div>
+    <div class="card" onclick="showDetails('winter1')">
+      <img src="wintercloth.jpg" alt="Winter Cloth">
+      <div class="card-icon">❄️</div>
+      <div class="card-title">Winter Cloth</div>
+    </div>
+    <div class="card" onclick="showDetails('purse1')">
+      <img src="purse.jpg" alt="Ladies Purse">
+      <div class="card-icon">👜</div>
+      <div class="card-title">Ladies Purse</div>
+    </div>
+  </div>
+  
+  <div id="saree1" class="details">
+    <span class="close-details" onclick="closeDetails('saree1')">×</span>
+    <h3>Traditional Saree</h3>
+    <p>Beautiful traditional cotton saree perfect for everyday wear and special occasions. Features intricate designs with comfortable fit.</p>
+    <table>
+      <tr data-product="Traditional Saree" data-grade="Regular" data-price="800">
+        <td>Regular</td>
+        <td>₹800</td>
+        <td class="cart-cell">
+          <div class="cart-cell-inner">
+            <input type="number" class="quantity-input row-qty" value="1" min="1">
+            <button class="add-to-cart-btn" onclick="addRowToCart(this)">Add to Cart</button>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+  
+  <div id="saree2" class="details">
+    <span class="close-details" onclick="closeDetails('saree2')">×</span>
+    <h3>Silk Saree</h3>
+    <p>Premium quality silk saree with elegant patterns. Perfect for festivals and celebrations. Luxurious feel with superior quality.</p>
+    <table>
+      <tr data-product="Silk Saree" data-grade="Premium" data-price="2500">
+        <td>Premium</td>
+        <td>₹2500</td>
+        <td class="cart-cell">
+          <div class="cart-cell-inner">
+            <input type="number" class="quantity-input row-qty" value="1" min="1">
+            <button class="add-to-cart-btn" onclick="addRowToCart(this)">Add to Cart</button>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+  
+  <div id="suit1" class="details">
+    <span class="close-details" onclick="closeDetails('suit1')">×</span>
+    <h3>Kurta Suit</h3>
+    <p>Stylish kurta suit set perfect for casual and formal occasions. Comfortable fabric with trendy designs.</p>
+    <table>
+      <tr data-product="Kurta Suit" data-grade="Standard" data-price="1200">
+        <td>Standard</td>
+        <td>₹1200</td>
+        <td class="cart-cell">
+          <div class="cart-cell-inner">
+            <input type="number" class="quantity-input row-qty" value="1" min="1">
+            <button class="add-to-cart-btn" onclick="addRowToCart(this)">Add to Cart</button>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+  
+  <div id="dress1" class="details">
+    <span class="close-details" onclick="closeDetails('dress1')">×</span>
+    <h3>Casual Dress</h3>
+    <p>Elegant and comfortable casual dress suitable for daily wear and gatherings.</p>
+    <table>
+      <tr data-product="Casual Dress" data-grade="Regular" data-price="950">
+        <td>Regular</td>
+        <td>₹950</td>
+        <td class="cart-cell">
+          <div class="cart-cell-inner">
+            <input type="number" class="quantity-input row-qty" value="1" min="1">
+            <button class="add-to-cart-btn" onclick="addRowToCart(this)">Add to Cart</button>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+  
+  <div id="lehenga1" class="details">
+    <span class="close-details" onclick="closeDetails('lehenga1')">×</span>
+    <h3>Lehenga</h3>
+    <p>Beautiful festive lehenga with intricate embroidery and graceful finish.</p>
+    <table>
+      <tr data-product="Lehenga" data-grade="Premium" data-price="3500">
+        <td>Premium</td>
+        <td>₹3500</td>
+        <td class="cart-cell">
+          <div class="cart-cell-inner">
+            <input type="number" class="quantity-input row-qty" value="1" min="1">
+            <button class="add-to-cart-btn" onclick="addRowToCart(this)">Add to Cart</button>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+  
+  <div id="kurti1" class="details">
+    <span class="close-details" onclick="closeDetails('kurti1')">×</span>
+    <h3>Short Kurti</h3>
+    <p>Stylish short kurti designed for everyday comfort and trendy appeal.</p>
+    <table>
+      <tr data-product="Short Kurti" data-grade="Standard" data-price="700">
+        <td>Standard</td>
+        <td>₹700</td>
+        <td class="cart-cell">
+          <div class="cart-cell-inner">
+            <input type="number" class="quantity-input row-qty" value="1" min="1">
+            <button class="add-to-cart-btn" onclick="addRowToCart(this)">Add to Cart</button>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+  
+  <div id="coordset1" class="details">
+    <span class="close-details" onclick="closeDetails('coordset1')">×</span>
+    <h3>Coord Set</h3>
+    <p>Fashionable coord set for a modern and coordinated look.</p>
+    <table>
+      <tr data-product="Coord Set" data-grade="Premium" data-price="1800">
+        <td>Premium</td>
+        <td>₹1800</td>
+        <td class="cart-cell">
+          <div class="cart-cell-inner">
+            <input type="number" class="quantity-input row-qty" value="1" min="1">
+            <button class="add-to-cart-btn" onclick="addRowToCart(this)">Add to Cart</button>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+  
+  <div id="winter1" class="details">
+    <span class="close-details" onclick="closeDetails('winter1')">×</span>
+    <h3>Winter Cloth</h3>
+    <p>Warm and comfortable winter wear to keep you cozy in style.</p>
+    <table>
+      <tr data-product="Winter Cloth" data-grade="Regular" data-price="1500">
+        <td>Regular</td>
+        <td>₹1500</td>
+        <td class="cart-cell">
+          <div class="cart-cell-inner">
+            <input type="number" class="quantity-input row-qty" value="1" min="1">
+            <button class="add-to-cart-btn" onclick="addRowToCart(this)">Add to Cart</button>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+  
+  <div id="purse1" class="details">
+    <span class="close-details" onclick="closeDetails('purse1')">×</span>
+    <h3>Ladies Purse</h3>
+    <p>Elegant ladies purse with premium finish and practical design.</p>
+    <table>
+      <tr data-product="Ladies Purse" data-grade="Standard" data-price="900">
+        <td>Standard</td>
+        <td>₹900</td>
+        <td class="cart-cell">
+          <div class="cart-cell-inner">
+            <input type="number" class="quantity-input row-qty" value="1" min="1">
+            <button class="add-to-cart-btn" onclick="addRowToCart(this)">Add to Cart</button>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+</body>
+</html>
