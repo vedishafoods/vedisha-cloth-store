@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400">
+  <!-- Background -->
+  <rect width="300" height="400" fill="#fff0f5"/>
+  
+  <!-- Border -->
+  <rect x="10" y="10" width="280" height="380" fill="none" stroke="#8B4513" stroke-width="3"/>
+  
+  <!-- Frock body -->
+  <path d="M 85 80 L 85 220 Q 85 240 95 280 L 205 280 Q 215 240 215 220 L 215 80 Z" fill="#FF85C0" opacity="0.9"/>
+  
+  <!-- Neckline with collar -->
+  <ellipse cx="150" cy="82" rx="32" ry="14" fill="#FF69B4"/>
+  <path d="M 125 82 Q 125 75 150 72 Q 175 75 175 82" fill="white" opacity="0.3"/>
+  
+  <!-- Sleeves -->
+  <path d="M 85 95 Q 65 100 60 130 L 80 110" fill="#FF85C0" opacity="0.9"/>
+  <path d="M 215 95 Q 235 100 240 130 L 220 110" fill="#FF85C0" opacity="0.9"/>
+  
+  <!-- Waist ribbon -->
+  <ellipse cx="150" cy="145" rx="55" ry="6" fill="#FFD700" opacity="0.8"/>
+  
+  <!-- Cute pattern dots -->
+  <circle cx="120" cy="110" r="4" fill="#FFF" opacity="0.6"/>
+  <circle cx="180" cy="110" r="4" fill="#FFF" opacity="0.6"/>
+  <circle cx="100" cy="150" r="3" fill="#FFF" opacity="0.5"/>
+  <circle cx="200" cy="150" r="3" fill="#FFF" opacity="0.5"/>
+  <circle cx="150" cy="170" r="3" fill="#FFF" opacity="0.5"/>
+  
+  <!-- Hem lace -->
+  <line x1="95" y1="275" x2="205" y2="275" stroke="#FFD700" stroke-width="2" stroke-dasharray="5,3"/>
+  
+  <!-- Title -->
+  <text x="150" y="360" font-size="16" font-weight="bold" text-anchor="middle" fill="#8B4513">Kids Frock</text>
+  <text x="150" y="380" font-size="12" text-anchor="middle" fill="#666">Cute & Comfortable</text>
+</svg>

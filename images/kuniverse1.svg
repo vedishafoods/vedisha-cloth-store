@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400">
+  <!-- Background -->
+  <rect width="300" height="400" fill="#fef5e7"/>
+  
+  <!-- Border -->
+  <rect x="10" y="10" width="280" height="380" fill="none" stroke="#8B4513" stroke-width="3"/>
+  
+  <!-- Top (Choli) -->
+  <path d="M 95 70 L 95 130 L 150 135 L 205 130 L 205 70 Z" fill="#E74C3C" opacity="0.9"/>
+  
+  <!-- Neckline -->
+  <ellipse cx="150" cy="72" rx="30" ry="12" fill="#C0392B"/>
+  
+  <!-- Bottom (Lehenga) -->
+  <path d="M 75 135 Q 75 150 85 170 L 85 290 Q 85 305 100 310 L 200 310 Q 215 305 215 290 L 215 170 Q 225 150 225 135 Z" fill="#F39C12" opacity="0.85"/>
+  
+  <!-- Gold embroidery bands -->
+  <rect x="80" y="150" width="140" height="8" fill="#FFD700" opacity="0.7"/>
+  <rect x="80" y="190" width="140" height="6" fill="#FFD700" opacity="0.6"/>
+  <rect x="80" y="240" width="140" height="6" fill="#FFD700" opacity="0.6"/>
+  
+  <!-- Decorative circles -->
+  <circle cx="100" cy="170" r="4" fill="#C0392B"/>
+  <circle cx="150" cy="170" r="4" fill="#C0392B"/>
+  <circle cx="200" cy="170" r="4" fill="#C0392B"/>
+  
+  <!-- Gold border -->
+  <line x1="80" y1="285" x2="220" y2="285" stroke="#B8860B" stroke-width="2"/>
+  
+  <!-- Title -->
+  <text x="150" y="360" font-size="16" font-weight="bold" text-anchor="middle" fill="#8B4513">Kids Ethnic Wear</text>
+  <text x="150" y="380" font-size="12" text-anchor="middle" fill="#666">Festival Special</text>
+</svg>
