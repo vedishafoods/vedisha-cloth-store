@@ -92,7 +92,9 @@ nav a:hover {
   background: #FFC700;
 }
 
-.section { padding: 40px 20px; }
+.section {
+  padding: 40px 20px;
+}
 
 h2, h3 {
   font-family: 'Cormorant Garamond', 'Aptos Slab', serif;
@@ -101,9 +103,22 @@ h2, h3 {
   letter-spacing: 0.3px;
 }
 
-h2 { text-align: center; font-size: 31px; margin: 0 0 40px; }
-h3 { font-size: 24px; }
-.about { max-width: 1280px; margin: 0 auto; line-height: 1.7; }
+h2 {
+  text-align: center;
+  font-size: 31px;
+  margin: 0 0 40px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+.about {
+  max-width: 1280px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
 .about p {
   margin: 0 0 18px;
   text-align: left;
@@ -112,6 +127,7 @@ h3 { font-size: 24px; }
   color: #1a1a1a;
   max-width: 100%;
 }
+
 .grid {
   display: grid;
   grid-template-columns: repeat(5, minmax(200px, 1fr));
@@ -119,6 +135,7 @@ h3 { font-size: 24px; }
   max-width: 1280px;
   margin: 0 auto;
 }
+
 .card {
   background: #fff;
   border-radius: 12px;
@@ -129,8 +146,19 @@ h3 { font-size: 24px; }
   border: 1px solid rgba(0,0,0,0.04);
   position: relative;
 }
-.card:hover { transform: translateY(-2px); }
-.card img { width: 100%; height: 220px; object-fit: cover; display: block; background: #f5f5f5; }
+
+.card:hover {
+  transform: translateY(-2px);
+}
+
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+  background: #f5f5f5;
+}
+
 .card-title {
   padding: 16px 12px;
   text-align: center;
@@ -139,6 +167,7 @@ h3 { font-size: 24px; }
   background: #f3f3f3;
   font-size: 18px;
 }
+
 .card-icon {
   position: absolute;
   top: 10px;
@@ -153,6 +182,7 @@ h3 { font-size: 24px; }
   justify-content: center;
   box-shadow: 0 2px 8px rgba(0,0,0,0.15);
 }
+
 .details {
   display: none;
   background: #fff;
@@ -163,8 +193,16 @@ h3 { font-size: 24px; }
   box-shadow: 0 2px 8px rgba(0,0,0,.1);
   position: relative;
 }
-.details p { font-size: 18px; }
-.details h3 { margin-top: 0; padding-right: 40px; }
+
+.details p {
+  font-size: 18px;
+}
+
+.details h3 {
+  margin-top: 0;
+  padding-right: 40px;
+}
+
 .close-details {
   position: absolute;
   right: 20px;
@@ -176,12 +214,40 @@ h3 { font-size: 24px; }
   line-height: 1;
   transition: all 0.3s ease;
 }
-.close-details:hover { color: #999; transform: scale(1.2); }
-.active { display: block; }
-table { width: 100%; border-collapse: collapse; font-size: 18px; margin-bottom: 15px; }
-th, td { border: 1px solid #ddd; padding: 10px; }
-.cart-cell { white-space: nowrap; }
-.cart-cell .cart-cell-inner { display: flex; gap: 8px; align-items: center; justify-content: center; flex-wrap: wrap; }
+
+.close-details:hover {
+  color: #999;
+  transform: scale(1.2);
+}
+
+.active {
+  display: block;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.cart-cell {
+  white-space: nowrap;
+}
+
+.cart-cell .cart-cell-inner {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .quantity-input {
   width: 64px;
   padding: 8px;
@@ -191,6 +257,7 @@ th, td { border: 1px solid #ddd; padding: 10px; }
   text-align: center;
   box-sizing: border-box;
 }
+
 .add-to-cart-btn {
   display: inline-block;
   background: #8B4513;
@@ -204,8 +271,17 @@ th, td { border: 1px solid #ddd; padding: 10px; }
   border: none;
   cursor: pointer;
 }
-.add-to-cart-btn:hover { background: #6B3410; transform: translateY(-2px); box-shadow: 0 4px 12px rgba(139, 69, 19, 0.4); }
-.add-to-cart-btn.added { background: #25D366; }
+
+.add-to-cart-btn:hover {
+  background: #6B3410;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(139, 69, 19, 0.4);
+}
+
+.add-to-cart-btn.added {
+  background: #25D366;
+}
+
 .wa-btn {
   display: inline-block;
   background: #25D366;
@@ -218,7 +294,13 @@ th, td { border: 1px solid #ddd; padding: 10px; }
   font-weight: 600;
   transition: all 0.3s ease;
 }
-.wa-btn:hover { background: #20ba5e; transform: translateY(-2px); box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4); }
+
+.wa-btn:hover {
+  background: #20ba5e;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+}
+
 .contact-box {
   max-width: 700px;
   margin: auto;
@@ -228,7 +310,11 @@ th, td { border: 1px solid #ddd; padding: 10px; }
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0,0,0,.1);
 }
-.contact-box p { font-size: 18px; }
+
+.contact-box p {
+  font-size: 18px;
+}
+
 .form-section {
   max-width: 700px;
   margin: 40px auto;
@@ -237,8 +323,16 @@ th, td { border: 1px solid #ddd; padding: 10px; }
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0,0,0,.1);
 }
-.form-section h3 { margin-top: 0; color: #8B4513; }
-.form-group { margin-bottom: 18px; }
+
+.form-section h3 {
+  margin-top: 0;
+  color: #8B4513;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
 .form-group label {
   display: block;
   margin-bottom: 6px;
@@ -246,6 +340,7 @@ th, td { border: 1px solid #ddd; padding: 10px; }
   color: #8B4513;
   font-size: 16px;
 }
+
 .form-group input,
 .form-group textarea,
 .form-group select {
@@ -257,10 +352,20 @@ th, td { border: 1px solid #ddd; padding: 10px; }
   font-family: 'Manrope', sans-serif;
   box-sizing: border-box;
 }
+
 .form-group input:focus,
 .form-group textarea:focus,
-.form-group select:focus { outline: none; border-color: #8B4513; box-shadow: 0 0 5px rgba(139, 69, 19, 0.3); }
-.form-group textarea { resize: vertical; min-height: 120px; }
+.form-group select:focus {
+  outline: none;
+  border-color: #8B4513;
+  box-shadow: 0 0 5px rgba(139, 69, 19, 0.3);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
 .form-btn {
   background: #8B4513;
   color: white;
@@ -273,8 +378,19 @@ th, td { border: 1px solid #ddd; padding: 10px; }
   transition: all 0.3s ease;
   width: 100%;
 }
-.form-btn:hover { background: #6B3410; transform: translateY(-2px); box-shadow: 0 4px 12px rgba(139, 69, 19, 0.4); }
-.form-btn:disabled { background: #ccc; cursor: not-allowed; transform: none; }
+
+.form-btn:hover {
+  background: #6B3410;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(139, 69, 19, 0.4);
+}
+
+.form-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  transform: none;
+}
+
 .success-message {
   display: none;
   background: #d4edda;
@@ -285,6 +401,7 @@ th, td { border: 1px solid #ddd; padding: 10px; }
   text-align: center;
   font-weight: 600;
 }
+
 .form-info {
   background: #e7f3ff;
   color: #8B4513;
@@ -294,7 +411,15 @@ th, td { border: 1px solid #ddd; padding: 10px; }
   font-size: 14px;
   border-left: 4px solid #8B4513;
 }
-footer { background: #8B4513; color: white; text-align: center; padding: 20px; font-size: 18px; }
+
+footer {
+  background: #8B4513;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 18px;
+}
+
 .whatsapp-float {
   position: fixed;
   right: 20px;
@@ -309,7 +434,13 @@ footer { background: #8B4513; color: white; text-align: center; padding: 20px; f
   transition: all 0.3s ease;
   z-index: 999;
 }
-.whatsapp-float:hover { background: #20ba5e; transform: scale(1.1); }
+
+.whatsapp-float:hover {
+  background: #20ba5e;
+  transform: scale(1.1);
+}
+
+/* Modal Styles */
 .modal {
   display: none;
   position: fixed;
@@ -321,6 +452,7 @@ footer { background: #8B4513; color: white; text-align: center; padding: 20px; f
   background-color: rgba(0, 0, 0, 0.5);
   overflow: auto;
 }
+
 .modal-content {
   background-color: white;
   margin: 5% auto;
@@ -330,6 +462,7 @@ footer { background: #8B4513; color: white; text-align: center; padding: 20px; f
   box-shadow: 0 4px 20px rgba(0,0,0,0.3);
   position: relative;
 }
+
 .close-modal {
   position: absolute;
   right: 20px;
@@ -340,8 +473,17 @@ footer { background: #8B4513; color: white; text-align: center; padding: 20px; f
   cursor: pointer;
   transition: all 0.3s ease;
 }
-.close-modal:hover { color: #999; transform: scale(1.2); }
-.modal h3 { margin-top: 0; }
+
+.close-modal:hover {
+  color: #999;
+  transform: scale(1.2);
+}
+
+.modal h3 {
+  margin-top: 0;
+}
+
+/* Cart Modal Styles */
 .cart-item {
   display: flex;
   justify-content: space-between;
@@ -352,10 +494,28 @@ footer { background: #8B4513; color: white; text-align: center; padding: 20px; f
   margin-bottom: 10px;
   background: #f9f9f9;
 }
-.cart-item-info { flex-grow: 1; }
-.cart-item-name { font-weight: 600; color: #8B4513; margin-bottom: 4px; }
-.cart-item-details { font-size: 14px; color: #666; }
-.cart-item-actions { display: flex; gap: 8px; align-items: center; }
+
+.cart-item-info {
+  flex-grow: 1;
+}
+
+.cart-item-name {
+  font-weight: 600;
+  color: #8B4513;
+  margin-bottom: 4px;
+}
+
+.cart-item-details {
+  font-size: 14px;
+  color: #666;
+}
+
+.cart-item-actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
 .remove-item-btn {
   background: #ff4444;
   color: white;
@@ -366,7 +526,11 @@ footer { background: #8B4513; color: white; text-align: center; padding: 20px; f
   font-size: 12px;
   transition: all 0.3s ease;
 }
-.remove-item-btn:hover { background: #cc0000; }
+
+.remove-item-btn:hover {
+  background: #cc0000;
+}
+
 .cart-summary {
   background: #f0f0f0;
   padding: 15px;
@@ -374,8 +538,21 @@ footer { background: #8B4513; color: white; text-align: center; padding: 20px; f
   margin: 20px 0;
   border-left: 4px solid #8B4513;
 }
-.cart-total { font-size: 20px; font-weight: bold; color: #8B4513; text-align: right; margin-top: 10px; }
-.empty-cart { text-align: center; padding: 40px 20px; color: #666; }
+
+.cart-total {
+  font-size: 20px;
+  font-weight: bold;
+  color: #8B4513;
+  text-align: right;
+  margin-top: 10px;
+}
+
+.empty-cart {
+  text-align: center;
+  padding: 40px 20px;
+  color: #666;
+}
+
 .checkout-btn {
   background: #25D366;
   color: white;
@@ -389,7 +566,14 @@ footer { background: #8B4513; color: white; text-align: center; padding: 20px; f
   transition: all 0.3s ease;
   margin-top: 15px;
 }
-.checkout-btn:hover { background: #20ba5e; transform: translateY(-2px); box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4); }
+
+.checkout-btn:hover {
+  background: #20ba5e;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+}
+
+/* Payment Modal Styles */
 .pay-option {
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -412,63 +596,276 @@ footer { background: #8B4513; color: white; text-align: center; padding: 20px; f
 .pay-option input { width: 100%; box-sizing: border-box; padding: 10px; margin: 6px 0; border: 1px solid #ccc; border-radius: 6px; font-family: inherit; }
 @media (max-width: 700px) { .pay-option { padding: 12px; } }
 @media (max-width: 480px) { .pay-amount { font-size: 18px; } .upi-pay-btn, .pay-wa-btn { display: block; margin: 8px 0 0; } }
-@media (max-width: 1180px) { .grid { grid-template-columns: repeat(4, minmax(180px, 1fr)); } h2 { font-size: 28px; } }
-@media (max-width: 940px) { .grid { grid-template-columns: repeat(3, minmax(150px, 1fr)); } h2 { font-size: 26px; margin: 0 0 30px; } .section { padding: 30px 15px; } .form-section { margin: 30px 15px; padding: 20px; } }
-@media (max-width: 700px) {
-  .grid { grid-template-columns: repeat(2, minmax(120px, 1fr)); gap: 15px 12px; }
-  header img { width: 70%; max-width: 300px; }
-  .cart-icon-container { right: 15px; top: 15px; }
-  nav { gap: 8px; margin-top: 12px; }
-  nav a { font-size: 13px; padding: 6px 10px; margin: 4px 2px; }
-  h2 { font-size: 24px; margin: 0 0 25px; }
-  h3 { font-size: 20px; }
-  .section { padding: 25px 12px; }
-  .about p { font-size: 16px; line-height: 1.6; }
-  .card-title { font-size: 16px; padding: 12px 8px; }
-  table { font-size: 16px; }
-  th, td { padding: 8px; }
-  .cart-cell { white-space: normal; }
-  .contact-box { padding: 20px 15px; }
-  .contact-box p { font-size: 16px; }
-  .wa-btn { font-size: 13px; padding: 8px 14px; }
-  .form-section { padding: 20px 12px; margin: 25px 12px; }
-  .form-group label { font-size: 15px; }
-  .form-group input,
-  .form-group textarea,
-  .form-group select { font-size: 14px; padding: 8px 10px; }
-  .form-btn { font-size: 15px; padding: 10px 20px; }
-  footer { font-size: 16px; padding: 15px; }
-  .whatsapp-float { padding: 12px 16px; font-size: 13px; right: 15px; bottom: 15px; }
-  .modal-content { margin: 20% auto; max-width: 90%; }
+
+@media (max-width: 1180px) {
+  .grid {
+    grid-template-columns: repeat(4, minmax(180px, 1fr));
+  }
+  
+  h2 {
+    font-size: 28px;
+  }
 }
-@media (max-width: 480px) {
-  .grid { grid-template-columns: 1fr; gap: 12px 8px; }
-  header { padding: 15px; }
-  header img { width: 65%; max-width: 220px; }
-  .cart-icon-container { right: 10px; top: 10px; }
-  nav { gap: 6px; margin-top: 10px; }
-  nav a { font-size: 12px; padding: 5px 8px; margin: 3px 2px; }
-  h2 { font-size: 22px; margin: 0 0 20px; }
-  h3 { font-size: 18px; }
-  .section { padding: 20px 10px; }
-  .about p { font-size: 15px; line-height: 1.5; }
-  .card-title { font-size: 14px; padding: 10px 6px; }
-  .details p { font-size: 15px; }
-  table { font-size: 14px; }
-  th, td { padding: 6px; }
-  .add-to-cart-btn { padding: 7px 10px; font-size: 13px; }
-  .contact-box { padding: 15px 12px; max-width: 100%; }
-  .contact-box p { font-size: 15px; margin: 8px 0; }
-  .wa-btn { font-size: 13px; padding: 7px 12px; width: 100%; box-sizing: border-box; }
-  .form-section { padding: 15px 10px; margin: 20px 10px; }
-  .form-group label { font-size: 14px; }
+
+@media (max-width: 940px) {
+  .grid {
+    grid-template-columns: repeat(3, minmax(150px, 1fr));
+  }
+  
+  h2 {
+    font-size: 26px;
+    margin: 0 0 30px;
+  }
+  
+  .section {
+    padding: 30px 15px;
+  }
+  
+  .form-section {
+    margin: 30px 15px;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(120px, 1fr));
+    gap: 15px 12px;
+  }
+  
+  header img {
+    width: 70%;
+    max-width: 300px;
+  }
+  
+  .cart-icon-container {
+    right: 15px;
+    top: 15px;
+  }
+  
+  nav {
+    gap: 8px;
+    margin-top: 12px;
+  }
+  
+  nav a {
+    font-size: 13px;
+    padding: 6px 10px;
+    margin: 4px 2px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin: 0 0 25px;
+  }
+  
+  h3 {
+    font-size: 20px;
+  }
+  
+  .section {
+    padding: 25px 12px;
+  }
+  
+  .about p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  .card-title {
+    font-size: 16px;
+    padding: 12px 8px;
+  }
+  
+  table {
+    font-size: 16px;
+  }
+  
+  th, td {
+    padding: 8px;
+  }
+  
+  .cart-cell {
+    white-space: normal;
+  }
+  
+  .contact-box {
+    padding: 20px 15px;
+  }
+  
+  .contact-box p {
+    font-size: 16px;
+  }
+  
+  .wa-btn {
+    font-size: 13px;
+    padding: 8px 14px;
+  }
+  
+  .form-section {
+    padding: 20px 12px;
+    margin: 25px 12px;
+  }
+  
+  .form-group label {
+    font-size: 15px;
+  }
+  
   .form-group input,
   .form-group textarea,
-  .form-group select { font-size: 13px; padding: 8px 10px; }
-  .form-btn { font-size: 14px; padding: 10px 16px; }
-  footer { font-size: 14px; padding: 12px 8px; }
-  .whatsapp-float { padding: 10px 14px; font-size: 13px; right: 10px; bottom: 10px; }
-  .modal-content { margin: 30% auto; padding: 20px; }
+  .form-group select {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+  
+  .form-btn {
+    font-size: 15px;
+    padding: 10px 20px;
+  }
+  
+  footer {
+    font-size: 16px;
+    padding: 15px;
+  }
+  
+  .whatsapp-float {
+    padding: 12px 16px;
+    font-size: 13px;
+    right: 15px;
+    bottom: 15px;
+  }
+  
+  .modal-content {
+    margin: 20% auto;
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 12px 8px;
+  }
+  
+  header {
+    padding: 15px;
+  }
+  
+  header img {
+    width: 65%;
+    max-width: 220px;
+  }
+  
+  .cart-icon-container {
+    right: 10px;
+    top: 10px;
+  }
+  
+  nav {
+    gap: 6px;
+    margin-top: 10px;
+  }
+  
+  nav a {
+    font-size: 12px;
+    padding: 5px 8px;
+    margin: 3px 2px;
+  }
+  
+  h2 {
+    font-size: 22px;
+    margin: 0 0 20px;
+  }
+  
+  h3 {
+    font-size: 18px;
+  }
+  
+  .section {
+    padding: 20px 10px;
+  }
+  
+  .about p {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  
+  .card-title {
+    font-size: 14px;
+    padding: 10px 6px;
+  }
+  
+  .details p {
+    font-size: 15px;
+  }
+  
+  table {
+    font-size: 14px;
+  }
+  
+  th, td {
+    padding: 6px;
+  }
+  
+  .add-to-cart-btn {
+    padding: 7px 10px;
+    font-size: 13px;
+  }
+  
+  .contact-box {
+    padding: 15px 12px;
+    max-width: 100%;
+  }
+  
+  .contact-box p {
+    font-size: 15px;
+    margin: 8px 0;
+  }
+  
+  .wa-btn {
+    font-size: 13px;
+    padding: 7px 12px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .form-section {
+    padding: 15px 10px;
+    margin: 20px 10px;
+  }
+  
+  .form-group label {
+    font-size: 14px;
+  }
+  
+  .form-group input,
+  .form-group textarea,
+  .form-group select {
+    font-size: 13px;
+    padding: 8px 10px;
+  }
+  
+  .form-btn {
+    font-size: 14px;
+    padding: 10px 16px;
+  }
+  
+  footer {
+    font-size: 14px;
+    padding: 12px 8px;
+  }
+  
+  .whatsapp-float {
+    padding: 10px 14px;
+    font-size: 13px;
+    right: 10px;
+    bottom: 10px;
+  }
+  
+  .modal-content {
+    margin: 30% auto;
+    padding: 20px;
+  }
 }
 </style>
 </head>
@@ -492,4 +889,612 @@ footer { background: #8B4513; color: white; text-align: center; padding: 20px; f
 <div id="home" class="section">
   <h2>Welcome to Vedisha Cloth Store</h2>
   <div class="about">
-    <p>Welcome to Vedisha, your premier destination for exquisite ladies and kids clothing. We specialize in offering high-quality, fashionable, and comfortable clothing for every occasion. Our collec[... omitted ...]
+    <p>Welcome to Vedisha, your premier destination for exquisite ladies and kids clothing. We specialize in offering high-quality, fashionable, and comfortable clothing for every occasion. Our collection features the latest trends and timeless classics for women and children.</p>
+    <p>Each piece in our collection is carefully selected to ensure the best quality and aesthetic appeal. We believe in celebrating individuality and self-expression through fashion, offering a diverse range of styles to suit every preference and body type.</p>
+  </div>
+</div>
+
+<div id="about" class="section">
+  <h2>About Our Store</h2>
+  <div class="about">
+    <p><strong>Our Mission:</strong> To provide affordable, high-quality, and fashionable clothing that brings joy and confidence to our customers.</p>
+    <p><strong>Our Values:</strong> We are committed to quality, customer satisfaction, and sustainable fashion practices. Every piece is selected with care to ensure it meets our high standards.</p>
+    <p><strong>Why Choose Us:</strong></p>
+    <ul>
+      <li>Premium quality fabrics and designs</li>
+      <li>Wide variety for all ages and occasions</li>
+      <li>Competitive pricing</li>
+      <li>Fast and reliable delivery</li>
+      <li>Excellent customer service</li>
+    </ul>
+  </div>
+</div>
+
+<div id="ladies" class="section">
+  <h2>Ladies Collection</h2>
+  <div class="grid">
+    <div class="card" onclick="showDetails('saree1')">
+      <img src="traditionalsaree.jpg" alt="Traditional Saree">
+      <div class="card-icon">🥻</div>
+      <div class="card-title">Traditional Saree</div>
+    </div>
+    <div class="card" onclick="showDetails('saree2')">
+      <img src="silksaree.jpg" alt="Silk Saree">
+      <div class="card-icon">✨</div>
+      <div class="card-title">Silk Saree</div>
+    </div>
+    <div class="card" onclick="showDetails('suit1')">
+      <img src="kurtasuite.jpg" alt="Kurta Suit">
+      <div class="card-icon">👗</div>
+      <div class="card-title">Kurta Suit</div>
+    </div>
+    <div class="card" onclick="showDetails('dress1')">
+      <img src="casualdress.jpg" alt="Casual Dress">
+      <div class="card-icon">👚</div>
+      <div class="card-title">Casual Dress</div>
+    </div>
+    <div class="card" onclick="showDetails('lehenga1')">
+      <img src="lehnga.jpg" alt="Lehenga">
+      <div class="card-icon">💃</div>
+      <div class="card-title">Lehenga</div>
+    </div>
+    <div class="card" onclick="showDetails('kurti1')">
+      <img src="shortkurti.jpg" alt="Short Kurti">
+      <div class="card-icon">👕</div>
+      <div class="card-title">Short Kurti</div>
+    </div>
+    <div class="card" onclick="showDetails('coordset1')">
+      <img src="coordset.jpg" alt="Coord Set">
+      <div class="card-icon">🌟</div>
+      <div class="card-title">Coord Set</div>
+    </div>
+    <div class="card" onclick="showDetails('winter1')">
+      <img src="wintercloth.jpg" alt="Winter Cloth">
+      <div class="card-icon">❄️</div>
+      <div class="card-title">Winter Cloth</div>
+    </div>
+    <div class="card" onclick="showDetails('purse1')">
+      <img src="purse.jpg" alt="Ladies Purse">
+      <div class="card-icon">👜</div>
+      <div class="card-title">Ladies Purse</div>
+    </div>
+  </div>
+  
+  <div id="saree1" class="details">
+    <span class="close-details" onclick="closeDetails('saree1')">×</span>
+    <h3>Traditional Saree</h3>
+    <p>Beautiful traditional cotton saree perfect for everyday wear and special occasions. Features intricate designs with comfortable fit.</p>
+    <table>
+      <tr data-product="Traditional Saree" data-grade="Regular" data-price="800">
+        <td>Regular</td>
+        <td>₹800</td>
+        <td class="cart-cell">
+          <div class="cart-cell-inner">
+            <input type="number" class="quantity-input row-qty" value="1" min="1">
+            <button class="add-to-cart-btn" onclick="addRowToCart(this)">Add to Cart</button>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+  
+  <div id="saree2" class="details">
+    <span class="close-details" onclick="closeDetails('saree2')">×</span>
+    <h3>Silk Saree</h3>
+    <p>Premium quality silk saree with elegant patterns. Perfect for festivals and celebrations. Luxurious feel with superior quality.</p>
+    <table>
+      <tr data-product="Silk Saree" data-grade="Premium" data-price="2500">
+        <td>Premium</td>
+        <td>₹2500</td>
+        <td class="cart-cell">
+          <div class="cart-cell-inner">
+            <input type="number" class="quantity-input row-qty" value="1" min="1">
+            <button class="add-to-cart-btn" onclick="addRowToCart(this)">Add to Cart</button>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+  
+  <div id="suit1" class="details">
+    <span class="close-details" onclick="closeDetails('suit1')">×</span>
+    <h3>Kurta Suit</h3>
+    <p>Stylish kurta suit set perfect for casual and formal occasions. Comfortable fabric with trendy designs.</p>
+    <table>
+      <tr data-product="Kurta Suit" data-grade="Standard" data-price="1200">
+        <td>Standard</td>
+        <td>₹1200</td>
+        <td class="cart-cell">
+          <div class="cart-cell-inner">
+            <input type="number" class="quantity-input row-qty" value="1" min="1">
+            <button class="add-to-cart-btn" onclick="addRowToCart(this)">Add to Cart</button>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+  
+  <div id="dress1" class="details">
+    <span class="close-details" onclick="closeDetails('dress1')">×</span>
+    <h3>Casual Dress</h3>
+    <p>Modern casual dress for everyday wear. Made with comfortable, breathable fabric. Perfect for any season.</p>
+    <table>
+      <tr data-product="Casual Dress" data-grade="Regular" data-price="599">
+        <td>Regular</td>
+        <td>₹599</td>
+        <td class="cart-cell">
+          <div class="cart-cell-inner">
+            <input type="number" class="quantity-input row-qty" value="1" min="1">
+            <button class="add-to-cart-btn" onclick="addRowToCart(this)">Add to Cart</button>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+  
+  <div id="lehenga1" class="details">
+    <span class="close-details" onclick="closeDetails('lehenga1')">×</span>
+    <h3>Lehenga</h3>
+    <p>Stunning lehenga set perfect for celebrations and weddings. Features beautiful embroidery and elegant designs.</p>
+    <table>
+      <tr data-product="Lehenga" data-grade="Embroidered" data-price="3500">
+        <td>Embroidered</td>
+        <td>₹3500</td>
+        <td class="cart-cell">
+          <div class="cart-cell-inner">
+            <input type="number" class="quantity-input row-qty" value="1" min="1">
+            <button class="add-to-cart-btn" onclick="addRowToCart(this)">Add to Cart</button>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div id="kurti1" class="details">
+    <span class="close-details" onclick="closeDetails('kurti1')">×</span>
+    <h3>Short Kurti</h3>
+    <p>Comfortable and stylish short kurti perfect for everyday wear. Available in various colors and designs with breathable fabric.</p>
+    <table>
+      <tr data-product="Short Kurti" data-grade="Regular" data-price="499">
+        <td>Regular</td>
+        <td>₹499</td>
+        <td class="cart-cell">
+          <div class="cart-cell-inner">
+            <input type="number" class="quantity-input row-qty" value="1" min="1">
+            <button class="add-to-cart-btn" onclick="addRowToCart(this)">Add to Cart</button>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div id="coordset1" class="details">
+    <span class="close-details" onclick="closeDetails('coordset1')">×</span>
+    <h3>Coord Set</h3>
+    <p>Trendy coordination set featuring a matching top and bottom. Perfect for casual outings and social gatherings with modern style.</p>
+    <table>
+      <tr data-product="Coord Set" data-grade="Standard" data-price="1099">
+        <td>Standard</td>
+        <td>₹1099</td>
+        <td class="cart-cell">
+          <div class="cart-cell-inner">
+            <input type="number" class="quantity-input row-qty" value="1" min="1">
+            <button class="add-to-cart-btn" onclick="addRowToCart(this)">Add to Cart</button>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div id="winter1" class="details">
+    <span class="close-details" onclick="closeDetails('winter1')">×</span>
+    <h3>Winter Cloth</h3>
+    <p>Warm and cozy winter collection featuring stylish designs. Made with premium winter fabrics to keep you comfortable in cold weather.</p>
+    <table>
+      <tr data-product="Winter Cloth" data-grade="Premium" data-price="1499">
+        <td>Premium</td>
+        <td>₹1499</td>
+        <td class="cart-cell">
+          <div class="cart-cell-inner">
+            <input type="number" class="quantity-input row-qty" value="1" min="1">
+            <button class="add-to-cart-btn" onclick="addRowToCart(this)">Add to Cart</button>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div id="purse1" class="details">
+    <span class="close-details" onclick="closeDetails('purse1')">×</span>
+    <h3>Ladies Purse</h3>
+    <p>Elegant ladies purse with premium finish. Spacious compartments and stylish design. Perfect accessory for any occasion.</p>
+    <table>
+      <tr data-product="Ladies Purse" data-grade="Premium" data-price="799">
+        <td>Premium</td>
+        <td>₹799</td>
+        <td class="cart-cell">
+          <div class="cart-cell-inner">
+            <input type="number" class="quantity-input row-qty" value="1" min="1">
+            <button class="add-to-cart-btn" onclick="addRowToCart(this)">Add to Cart</button>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<div id="kids" class="section">
+  <h2>Kids Collection</h2>
+  <div class="grid">
+    <div class="card" onclick="showDetails('kidshirt1')">
+      <img src="kidsshirt.jpg" alt="Kids Shirt">
+      <div class="card-icon">👕</div>
+      <div class="card-title">Kids Shirt</div>
+    </div>
+    <div class="card" onclick="showDetails('kidsdenim1')">
+      <img src="kidsdenim.jpg" alt="Kids Denim">
+      <div class="card-icon">👖</div>
+      <div class="card-title">Kids Denim</div>
+    </div>
+    <div class="card" onclick="showDetails('kidsfrock1')">
+      <img src="kidsfrok.jpg" alt="Kids Frock">
+      <div class="card-icon">👗</div>
+      <div class="card-title">Kids Frock</div>
+    </div>
+    <div class="card" onclick="showDetails('kidstraditional1')">
+      <img src="kidstraditional.jpg" alt="Kids Traditional Wear">
+      <div class="card-icon">🥻</div>
+      <div class="card-title">Kids Traditional Wear</div>
+    </div>
+    <div class="card" onclick="showDetails('kidsethnic1')">
+      <img src="kidsethnicwear.jpg" alt="Kids Ethnic Wear">
+      <div class="card-icon">✨</div>
+      <div class="card-title">Kids Ethnic Wear</div>
+    </div>
+  </div>
+  
+  <div id="kidshirt1" class="details">
+    <span class="close-details" onclick="closeDetails('kidshirt1')">×</span>
+    <h3>Kids Shirt</h3>
+    <p>Comfortable and stylish shirt for kids. Perfect for school and casual wear. Available in various colors and designs.</p>
+    <table>
+      <tr data-product="Kids Shirt" data-grade="Regular" data-price="399">
+        <td>Regular</td>
+        <td>₹399</td>
+        <td class="cart-cell">
+          <div class="cart-cell-inner">
+            <input type="number" class="quantity-input row-qty" value="1" min="1">
+            <button class="add-to-cart-btn" onclick="addRowToCart(this)">Add to Cart</button>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+  
+  <div id="kidsdenim1" class="details">
+    <span class="close-details" onclick="closeDetails('kidsdenim1')">×</span>
+    <h3>Kids Denim</h3>
+    <p>Durable denim wear for active kids. Stylish and comfortable for everyday activities. Great quality at affordable prices.</p>
+    <table>
+      <tr data-product="Kids Denim" data-grade="Premium" data-price="599">
+        <td>Premium</td>
+        <td>₹599</td>
+        <td class="cart-cell">
+          <div class="cart-cell-inner">
+            <input type="number" class="quantity-input row-qty" value="1" min="1">
+            <button class="add-to-cart-btn" onclick="addRowToCart(this)">Add to Cart</button>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+  
+  <div id="kidsfrock1" class="details">
+    <span class="close-details" onclick="closeDetails('kidsfrock1')">×</span>
+    <h3>Kids Frock</h3>
+    <p>Cute and elegant frocks for little girls. Perfect for parties and special occasions. Comfortable and fashionable designs.</p>
+    <table>
+      <tr data-product="Kids Frock" data-grade="Standard" data-price="449">
+        <td>Standard</td>
+        <td>₹449</td>
+        <td class="cart-cell">
+          <div class="cart-cell-inner">
+            <input type="number" class="quantity-input row-qty" value="1" min="1">
+            <button class="add-to-cart-btn" onclick="addRowToCart(this)">Add to Cart</button>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+  
+  <div id="kidstraditional1" class="details">
+    <span class="close-details" onclick="closeDetails('kidstraditional1')">×</span>
+    <h3>Kids Traditional Wear</h3>
+    <p>Beautiful traditional wear for kids. Perfect for festivals and cultural events. Authentic designs with modern comfort.</p>
+    <table>
+      <tr data-product="Kids Traditional Wear" data-grade="Ethnic" data-price="699">
+        <td>Ethnic</td>
+        <td>₹699</td>
+        <td class="cart-cell">
+          <div class="cart-cell-inner">
+            <input type="number" class="quantity-input row-qty" value="1" min="1">
+            <button class="add-to-cart-btn" onclick="addRowToCart(this)">Add to Cart</button>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+  
+  <div id="kidsethnic1" class="details">
+    <span class="close-details" onclick="closeDetails('kidsethnic1')">×</span>
+    <h3>Kids Ethnic Wear</h3>
+    <p>Stylish ethnic wear for kids combining tradition with contemporary fashion. Great for celebrations and special occasions.</p>
+    <table>
+      <tr data-product="Kids Ethnic Wear" data-grade="Premium" data-price="799">
+        <td>Premium</td>
+        <td>₹799</td>
+        <td class="cart-cell">
+          <div class="cart-cell-inner">
+            <input type="number" class="quantity-input row-qty" value="1" min="1">
+            <button class="add-to-cart-btn" onclick="addRowToCart(this)">Add to Cart</button>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<div id="contact" class="section">
+  <h2>Contact Us</h2>
+  <div class="contact-box">
+    <p>Have questions? We'd love to hear from you! Reach out to us via WhatsApp for quick responses and assistance.</p>
+    <a href="https://wa.me/919876543210?text=Hello%20Vedisha%2C%20I%20am%20interested%20in%20your%20products" class="wa-btn" target="_blank">📱 Chat on WhatsApp</a>
+  </div>
+  
+  <div class="form-section">
+    <h3>Customer Inquiry Form</h3>
+    <div class="form-info">📧 Alternatively, submit your inquiry through this form and we'll get back to you soon!</div>
+    <div class="success-message">✅ Thank you! Your message has been sent successfully.</div>
+    <form id="contactForm">
+      <div class="form-group">
+        <label for="name">Full Name *</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address *</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number *</label>
+        <input type="tel" id="phone" name="phone" required>
+      </div>
+      <div class="form-group">
+        <label for="subject">Subject *</label>
+        <input type="text" id="subject" name="subject" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message *</label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+      <button type="submit" class="form-btn">Send Message</button>
+    </form>
+  </div>
+</div>
+
+<a href="https://wa.me/919876543210?text=Hello%20Vedisha%2C%20I%20am%20interested%20in%20your%20products" class="whatsapp-float" target="_blank">💬 WhatsApp Us</a>
+
+<!-- Cart Modal -->
+<div id="cartModal" class="modal">
+  <div class="modal-content">
+    <span class="close-modal" onclick="closeCart()">&times;</span>
+    <h3>🛒 Shopping Cart</h3>
+    <div id="cartItems"></div>
+    <div class="cart-summary">
+      <strong>Cart Summary:</strong>
+      <div class="cart-total">Total: ₹<span id="cartTotal">0</span></div>
+    </div>
+    <button class="checkout-btn" onclick="proceedToPayment()">Proceed to Payment</button>
+  </div>
+</div>
+
+<!-- Payment Modal -->
+<div id="paymentModal" class="modal">
+  <div class="modal-content">
+    <span class="close-modal" onclick="closePayment()">&times;</span>
+    <h3>💳 Payment Options</h3>
+    <div class="pay-option">
+      <h4>UPI Payment</h4>
+      <div class="pay-amount">₹<span id="upiAmount">0</span></div>
+      <p class="pay-note">Scan the QR code or use UPI ID: your-upi@bank</p>
+      <button class="upi-pay-btn" onclick="openUPI()">Pay with UPI</button>
+      <button class="pay-done-btn" onclick="completePayment()">I've Paid</button>
+    </div>
+    <div class="pay-option">
+      <h4>WhatsApp Payment</h4>
+      <div class="pay-amount">₹<span id="waAmount">0</span></div>
+      <p class="pay-note">Send payment details via WhatsApp</p>
+      <button class="pay-wa-btn" onclick="sendPaymentViaWA()">Send via WhatsApp</button>
+      <button class="pay-done-btn" onclick="completePayment()">Paid & Verify</button>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2024 Vedisha Cloth Store. All rights reserved. | Premium Ladies & Kids Clothing</p>
+</footer>
+
+<script>
+let cart = [];
+
+function scrollToSection(sectionId) {
+  const section = document.getElementById(sectionId);
+  if (section) {
+    section.scrollIntoView({ behavior: 'smooth' });
+  }
+}
+
+function showDetails(detailId) {
+  const detail = document.getElementById(detailId);
+  if (detail) {
+    detail.classList.add('active');
+    detail.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+}
+
+function closeDetails(detailId) {
+  const detail = document.getElementById(detailId);
+  if (detail) {
+    detail.classList.remove('active');
+  }
+}
+
+function addRowToCart(button) {
+  const row = button.closest('tr');
+  const product = row.getAttribute('data-product');
+  const grade = row.getAttribute('data-grade');
+  const price = parseInt(row.getAttribute('data-price'));
+  const quantity = parseInt(row.querySelector('.row-qty').value) || 1;
+  
+  const existingItem = cart.find(item => item.product === product && item.grade === grade);
+  
+  if (existingItem) {
+    existingItem.quantity += quantity;
+  } else {
+    cart.push({ product, grade, price, quantity });
+  }
+  
+  updateCart();
+  button.classList.add('added');
+  setTimeout(() => button.classList.remove('added'), 2000);
+}
+
+function updateCart() {
+  const cartCount = document.querySelector('.cart-count');
+  const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+  cartCount.textContent = totalItems;
+  
+  updateCartDisplay();
+}
+
+function updateCartDisplay() {
+  const cartItems = document.getElementById('cartItems');
+  const cartTotal = document.getElementById('cartTotal');
+  
+  if (cart.length === 0) {
+    cartItems.innerHTML = '<div class="empty-cart">Your cart is empty</div>';
+    cartTotal.textContent = '0';
+    return;
+  }
+  
+  let html = '';
+  let total = 0;
+  
+  cart.forEach((item, index) => {
+    const itemTotal = item.price * item.quantity;
+    total += itemTotal;
+    html += `
+      <div class="cart-item">
+        <div class="cart-item-info">
+          <div class="cart-item-name">${item.product}</div>
+          <div class="cart-item-details">${item.grade} - ₹${item.price} x ${item.quantity} = ₹${itemTotal}</div>
+        </div>
+        <div class="cart-item-actions">
+          <button class="remove-item-btn" onclick="removeFromCart(${index})">Remove</button>
+        </div>
+      </div>
+    `;
+  });
+  
+  cartItems.innerHTML = html;
+  cartTotal.textContent = total;
+}
+
+function removeFromCart(index) {
+  cart.splice(index, 1);
+  updateCart();
+}
+
+function openCart() {
+  document.getElementById('cartModal').style.display = 'block';
+  updateCartDisplay();
+}
+
+function closeCart() {
+  document.getElementById('cartModal').style.display = 'none';
+}
+
+function proceedToPayment() {
+  if (cart.length === 0) {
+    alert('Your cart is empty!');
+    return;
+  }
+  
+  const total = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+  document.getElementById('upiAmount').textContent = total;
+  document.getElementById('waAmount').textContent = total;
+  
+  document.getElementById('cartModal').style.display = 'none';
+  document.getElementById('paymentModal').style.display = 'block';
+}
+
+function closePayment() {
+  document.getElementById('paymentModal').style.display = 'none';
+}
+
+function openUPI() {
+  alert('UPI payment initiated. Please complete the payment in your UPI app.');
+}
+
+function sendPaymentViaWA() {
+  const total = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+  const items = cart.map(item => `${item.product} (${item.grade}) - ₹${item.price} x ${item.quantity}`).join('\n');
+  const message = `Hi Vedisha,\n\nI would like to place an order:\n${items}\n\nTotal: ₹${total}\n\nPlease confirm the payment details.`;
+  
+  const whatsappUrl = `https://wa.me/919876543210?text=${encodeURIComponent(message)}`;
+  window.open(whatsappUrl, '_blank');
+}
+
+function completePayment() {
+  alert('Thank you for your purchase! Your order will be processed soon.');
+  cart = [];
+  updateCart();
+  closePayment();
+}
+
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const phone = document.getElementById('phone').value;
+  const subject = document.getElementById('subject').value;
+  const message = document.getElementById('message').value;
+  
+  const whatsappMessage = `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nSubject: ${subject}\nMessage: ${message}`;
+  const whatsappUrl = `https://wa.me/919876543210?text=${encodeURIComponent(whatsappMessage)}`;
+  
+  window.open(whatsappUrl, '_blank');
+  
+  document.querySelector('.success-message').style.display = 'block';
+  this.reset();
+  
+  setTimeout(() => {
+    document.querySelector('.success-message').style.display = 'none';
+  }, 5000);
+});
+
+window.onclick = function(event) {
+  const cartModal = document.getElementById('cartModal');
+  const paymentModal = document.getElementById('paymentModal');
+  
+  if (event.target == cartModal) {
+    cartModal.style.display = 'none';
+  }
+  if (event.target == paymentModal) {
+    paymentModal.style.display = 'none';
+  }
+}
+</script>
+
+</body>
+</html>
