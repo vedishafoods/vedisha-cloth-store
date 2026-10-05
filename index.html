@@ -1,0 +1,1419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vedisha | Premium Ladies & Kids Clothing</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Manrope', 'Aptos', sans-serif;
+  background: #f5f1ed;
+  color: #333;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+header {
+  background: #fff;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,.1);
+  position: relative;
+}
+
+header img {
+  max-width: 855px;
+  width: 85%;
+  display: block;
+  margin: 0 auto;
+}
+
+.cart-icon-container {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cart-icon {
+  cursor: pointer;
+  font-size: 24px;
+  color: #8B4513;
+  transition: all 0.3s ease;
+}
+
+.cart-icon:hover {
+  transform: scale(1.2);
+}
+
+.cart-count {
+  background: #FFD700;
+  color: #8B4513;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+nav {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #8B4513;
+  font-weight: 700;
+  font-size: 14px;
+  background: #FFD700;
+  padding: 8px 16px;
+  display: inline-block;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+nav a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,.1);
+  background: #FFC700;
+}
+
+.section {
+  padding: 40px 20px;
+}
+
+h2, h3 {
+  font-family: 'Cormorant Garamond', 'Aptos Slab', serif;
+  color: #8B4513;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 31px;
+  margin: 0 0 40px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+.about {
+  max-width: 1280px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.about p {
+  margin: 0 0 18px;
+  text-align: left;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #1a1a1a;
+  max-width: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(200px, 1fr));
+  gap: 26px 22px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0,0,0,.08);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  border: 1px solid rgba(0,0,0,0.04);
+}
+
+.card:hover {
+  transform: translateY(-2px);
+}
+
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.card-title {
+  padding: 16px 12px;
+  text-align: center;
+  font-weight: 700;
+  color: #8B4513;
+  background: #f3f3f3;
+  font-size: 18px;
+}
+
+.details {
+  display: none;
+  background: #fff;
+  margin: 25px auto 0;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 1280px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.1);
+  position: relative;
+}
+
+.details p {
+  font-size: 18px;
+}
+
+.details h3 {
+  margin-top: 0;
+  padding-right: 40px;
+}
+
+.close-details {
+  position: absolute;
+  right: 20px;
+  top: 12px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #8B4513;
+  cursor: pointer;
+  line-height: 1;
+  transition: all 0.3s ease;
+}
+
+.close-details:hover {
+  color: #999;
+  transform: scale(1.2);
+}
+
+.active {
+  display: block;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.cart-cell {
+  white-space: nowrap;
+}
+
+.cart-cell .cart-cell-inner {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.quantity-input {
+  width: 64px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.add-to-cart-btn {
+  display: inline-block;
+  background: #8B4513;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.add-to-cart-btn:hover {
+  background: #6B3410;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(139, 69, 19, 0.4);
+}
+
+.add-to-cart-btn.added {
+  background: #25D366;
+}
+
+.wa-btn {
+  display: inline-block;
+  background: #25D366;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  margin-top: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.wa-btn:hover {
+  background: #20ba5e;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+}
+
+.contact-box {
+  max-width: 700px;
+  margin: auto;
+  text-align: center;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.1);
+}
+
+.contact-box p {
+  font-size: 18px;
+}
+
+.form-section {
+  max-width: 700px;
+  margin: 40px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.1);
+}
+
+.form-section h3 {
+  margin-top: 0;
+  color: #8B4513;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #8B4513;
+  font-size: 16px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: 'Manrope', sans-serif;
+  box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #8B4513;
+  box-shadow: 0 0 5px rgba(139, 69, 19, 0.3);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.form-btn {
+  background: #8B4513;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.form-btn:hover {
+  background: #6B3410;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(139, 69, 19, 0.4);
+}
+
+.form-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.success-message {
+  display: none;
+  background: #d4edda;
+  color: #155724;
+  padding: 15px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.form-info {
+  background: #e7f3ff;
+  color: #8B4513;
+  padding: 12px 15px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  border-left: 4px solid #8B4513;
+}
+
+footer {
+  background: #8B4513;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 18px;
+}
+
+.whatsapp-float {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background: #25D366;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  z-index: 999;
+}
+
+.whatsapp-float:hover {
+  background: #20ba5e;
+  transform: scale(1.1);
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: auto;
+}
+
+.modal-content {
+  background-color: white;
+  margin: 5% auto;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 700px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  position: relative;
+}
+
+.close-modal {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #8B4513;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.close-modal:hover {
+  color: #999;
+  transform: scale(1.2);
+}
+
+.modal h3 {
+  margin-top: 0;
+}
+
+/* Cart Modal Styles */
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  background: #f9f9f9;
+}
+
+.cart-item-info {
+  flex-grow: 1;
+}
+
+.cart-item-name {
+  font-weight: 600;
+  color: #8B4513;
+  margin-bottom: 4px;
+}
+
+.cart-item-details {
+  font-size: 14px;
+  color: #666;
+}
+
+.cart-item-actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.remove-item-btn {
+  background: #ff4444;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: all 0.3s ease;
+}
+
+.remove-item-btn:hover {
+  background: #cc0000;
+}
+
+.cart-summary {
+  background: #f0f0f0;
+  padding: 15px;
+  border-radius: 4px;
+  margin: 20px 0;
+  border-left: 4px solid #8B4513;
+}
+
+.cart-total {
+  font-size: 20px;
+  font-weight: bold;
+  color: #8B4513;
+  text-align: right;
+  margin-top: 10px;
+}
+
+.empty-cart {
+  text-align: center;
+  padding: 40px 20px;
+  color: #666;
+}
+
+.checkout-btn {
+  background: #25D366;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  transition: all 0.3s ease;
+  margin-top: 15px;
+}
+
+.checkout-btn:hover {
+  background: #20ba5e;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+}
+
+/* Payment Modal Styles */
+.pay-option {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+.pay-option h4 { margin: 0 0 10px; color: #8B4513; font-family: 'Cormorant Garamond', serif; font-size: 22px; }
+.pay-amount { font-size: 22px; font-weight: 700; color: #8B4513; margin-bottom: 12px; }
+.upi-qr { width: 220px; height: 220px; max-width: 100%; }
+.pay-note { font-size: 12px; color: #666; margin: 6px 0; }
+.upi-pay-btn, .pay-wa-btn, .pay-done-btn {
+  display: inline-block; border: none; cursor: pointer; padding: 10px 18px; border-radius: 6px;
+  text-decoration: none; font-weight: 600; font-size: 14px; font-family: inherit; margin: 6px 4px 0;
+}
+.upi-pay-btn { background: #8B4513; color: #fff; }
+.pay-wa-btn { background: #25D366; color: #fff; }
+.pay-wa-btn.secondary { background: #FFD700; color: #8B4513; }
+.pay-done-btn { background: #8B4513; color: #fff; width: 100%; padding: 12px; }
+.pay-option input { width: 100%; box-sizing: border-box; padding: 10px; margin: 6px 0; border: 1px solid #ccc; border-radius: 6px; font-family: inherit; }
+@media (max-width: 700px) { .pay-option { padding: 12px; } }
+@media (max-width: 480px) { .pay-amount { font-size: 18px; } .upi-pay-btn, .pay-wa-btn { display: block; margin: 8px 0 0; } }
+
+@media (max-width: 1180px) {
+  .grid {
+    grid-template-columns: repeat(4, minmax(180px, 1fr));
+  }
+  
+  h2 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 940px) {
+  .grid {
+    grid-template-columns: repeat(3, minmax(150px, 1fr));
+  }
+  
+  h2 {
+    font-size: 26px;
+    margin: 0 0 30px;
+  }
+  
+  .section {
+    padding: 30px 15px;
+  }
+  
+  .form-section {
+    margin: 30px 15px;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(120px, 1fr));
+    gap: 15px 12px;
+  }
+  
+  header img {
+    width: 90%;
+  }
+  
+  .cart-icon-container {
+    right: 15px;
+    top: 15px;
+  }
+  
+  nav {
+    gap: 8px;
+    margin-top: 12px;
+  }
+  
+  nav a {
+    font-size: 13px;
+    padding: 6px 10px;
+    margin: 4px 2px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin: 0 0 25px;
+  }
+  
+  h3 {
+    font-size: 20px;
+  }
+  
+  .section {
+    padding: 25px 12px;
+  }
+  
+  .about p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  .card-title {
+    font-size: 16px;
+    padding: 12px 8px;
+  }
+  
+  table {
+    font-size: 16px;
+  }
+  
+  th, td {
+    padding: 8px;
+  }
+  
+  .cart-cell {
+    white-space: normal;
+  }
+  
+  .contact-box {
+    padding: 20px 15px;
+  }
+  
+  .contact-box p {
+    font-size: 16px;
+  }
+  
+  .wa-btn {
+    font-size: 13px;
+    padding: 8px 14px;
+  }
+  
+  .form-section {
+    padding: 20px 12px;
+    margin: 25px 12px;
+  }
+  
+  .form-group label {
+    font-size: 15px;
+  }
+  
+  .form-group input,
+  .form-group textarea,
+  .form-group select {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+  
+  .form-btn {
+    font-size: 15px;
+    padding: 10px 20px;
+  }
+  
+  footer {
+    font-size: 16px;
+    padding: 15px;
+  }
+  
+  .whatsapp-float {
+    padding: 12px 16px;
+    font-size: 13px;
+    right: 15px;
+    bottom: 15px;
+  }
+  
+  .modal-content {
+    margin: 20% auto;
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 12px 8px;
+  }
+  
+  header {
+    padding: 15px;
+  }
+  
+  header img {
+    width: 95%;
+  }
+  
+  .cart-icon-container {
+    right: 10px;
+    top: 10px;
+  }
+  
+  nav {
+    gap: 6px;
+    margin-top: 10px;
+  }
+  
+  nav a {
+    font-size: 12px;
+    padding: 5px 8px;
+    margin: 3px 2px;
+  }
+  
+  h2 {
+    font-size: 22px;
+    margin: 0 0 20px;
+  }
+  
+  h3 {
+    font-size: 18px;
+  }
+  
+  .section {
+    padding: 20px 10px;
+  }
+  
+  .about p {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  
+  .card-title {
+    font-size: 14px;
+    padding: 10px 6px;
+  }
+  
+  .details p {
+    font-size: 15px;
+  }
+  
+  table {
+    font-size: 14px;
+  }
+  
+  th, td {
+    padding: 6px;
+  }
+  
+  .add-to-cart-btn {
+    padding: 7px 10px;
+    font-size: 13px;
+  }
+  
+  .contact-box {
+    padding: 15px 12px;
+    max-width: 100%;
+  }
+  
+  .contact-box p {
+    font-size: 15px;
+    margin: 8px 0;
+  }
+  
+  .wa-btn {
+    font-size: 13px;
+    padding: 7px 12px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .form-section {
+    padding: 15px 10px;
+    margin: 20px 10px;
+  }
+  
+  .form-group label {
+    font-size: 14px;
+  }
+  
+  .form-group input,
+  .form-group textarea,
+  .form-group select {
+    font-size: 13px;
+    padding: 8px 10px;
+  }
+  
+  .form-btn {
+    font-size: 14px;
+    padding: 10px 16px;
+  }
+  
+  footer {
+    font-size: 14px;
+    padding: 12px 8px;
+  }
+  
+  .whatsapp-float {
+    padding: 10px 14px;
+    font-size: 13px;
+    right: 10px;
+    bottom: 10px;
+  }
+  
+  .modal-content {
+    margin: 30% auto;
+    padding: 20px;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <img src="logo.png" alt="Vedisha Cloth Store Logo">
+  <div class="cart-icon-container">
+    <span class="cart-icon" onclick="openCart()">🛒</span>
+    <span class="cart-count">0</span>
+  </div>
+  <nav>
+    <a onclick="scrollToSection('home')">Home</a>
+    <a onclick="scrollToSection('about')">About</a>
+    <a onclick="scrollToSection('ladies')">Ladies</a>
+    <a onclick="scrollToSection('kids')">Kids</a>
+    <a onclick="scrollToSection('contact')">Contact</a>
+  </nav>
+</header>
+
+<div id="home" class="section">
+  <h2>Welcome to Vedisha Cloth Store</h2>
+  <div class="about">
+    <p>Welcome to Vedisha, your premier destination for exquisite ladies and kids clothing. We specialize in offering high-quality, fashionable, and comfortable clothing for every occasion. Our collection features traditional wear, casual outfits, and trendy designs that blend style with comfort.</p>
+    <p>Each piece in our collection is carefully selected to ensure the best quality and aesthetic appeal. We believe in celebrating individuality and self-expression through fashion, offering a diverse range of options for women and children.</p>
+  </div>
+</div>
+
+<div id="about" class="section">
+  <h2>About Our Store</h2>
+  <div class="about">
+    <p><strong>Our Mission:</strong> To provide affordable, high-quality, and fashionable clothing that brings joy and confidence to our customers.</p>
+    <p><strong>Our Values:</strong> We are committed to quality, customer satisfaction, and sustainable fashion practices. Every piece is selected with care to ensure it meets our high standards.</p>
+    <p><strong>Why Choose Us:</strong></p>
+    <ul>
+      <li>Premium quality fabrics and designs</li>
+      <li>Wide variety for all ages and occasions</li>
+      <li>Competitive pricing</li>
+      <li>Fast and reliable delivery</li>
+      <li>Excellent customer service</li>
+    </ul>
+  </div>
+</div>
+
+<div id="ladies" class="section">
+  <h2>Ladies Collection</h2>
+  <div class="grid">
+    <div class="card" onclick="showDetails('saree1')">
+      <img src="images/saree1.jpg" alt="Traditional Saree">
+      <div class="card-title">Traditional Saree</div>
+    </div>
+    <div class="card" onclick="showDetails('saree2')">
+      <img src="images/saree2.jpg" alt="Silk Saree">
+      <div class="card-title">Silk Saree</div>
+    </div>
+    <div class="card" onclick="showDetails('suit1')">
+      <img src="images/suit1.jpg" alt="Kurta Suit">
+      <div class="card-title">Kurta Suit</div>
+    </div>
+    <div class="card" onclick="showDetails('dress1')">
+      <img src="images/dress1.jpg" alt="Casual Dress">
+      <div class="card-title">Casual Dress</div>
+    </div>
+    <div class="card" onclick="showDetails('lehenga1')">
+      <img src="images/lehenga1.jpg" alt="Lehenga">
+      <div class="card-title">Lehenga</div>
+    </div>
+  </div>
+  
+  <div id="saree1" class="details">
+    <span class="close-details" onclick="closeDetails('saree1')">×</span>
+    <h3>Traditional Saree</h3>
+    <p>Beautiful traditional cotton saree perfect for everyday wear and special occasions. Features intricate designs with comfortable fit.</p>
+    <table>
+      <tr data-product="Traditional Saree" data-grade="Regular" data-price="800">
+        <td>Regular</td>
+        <td>₹800</td>
+        <td class="cart-cell">
+          <div class="cart-cell-inner">
+            <input type="number" class="quantity-input row-qty" value="1" min="1">
+            <button class="add-to-cart-btn" onclick="addRowToCart(this)">Add to Cart</button>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+  
+  <div id="saree2" class="details">
+    <span class="close-details" onclick="closeDetails('saree2')">×</span>
+    <h3>Silk Saree</h3>
+    <p>Premium quality silk saree with elegant patterns. Perfect for festivals and celebrations. Luxurious feel with superior quality.</p>
+    <table>
+      <tr data-product="Silk Saree" data-grade="Premium" data-price="2500">
+        <td>Premium</td>
+        <td>₹2500</td>
+        <td class="cart-cell">
+          <div class="cart-cell-inner">
+            <input type="number" class="quantity-input row-qty" value="1" min="1">
+            <button class="add-to-cart-btn" onclick="addRowToCart(this)">Add to Cart</button>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+  
+  <div id="suit1" class="details">
+    <span class="close-details" onclick="closeDetails('suit1')">×</span>
+    <h3>Kurta Suit</h3>
+    <p>Stylish kurta suit set perfect for casual and formal occasions. Comfortable fabric with trendy designs.</p>
+    <table>
+      <tr data-product="Kurta Suit" data-grade="Standard" data-price="1200">
+        <td>Standard</td>
+        <td>₹1200</td>
+        <td class="cart-cell">
+          <div class="cart-cell-inner">
+            <input type="number" class="quantity-input row-qty" value="1" min="1">
+            <button class="add-to-cart-btn" onclick="addRowToCart(this)">Add to Cart</button>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+  
+  <div id="dress1" class="details">
+    <span class="close-details" onclick="closeDetails('dress1')">×</span>
+    <h3>Casual Dress</h3>
+    <p>Modern casual dress for everyday wear. Made with comfortable, breathable fabric. Perfect for any season.</p>
+    <table>
+      <tr data-product="Casual Dress" data-grade="Regular" data-price="599">
+        <td>Regular</td>
+        <td>₹599</td>
+        <td class="cart-cell">
+          <div class="cart-cell-inner">
+            <input type="number" class="quantity-input row-qty" value="1" min="1">
+            <button class="add-to-cart-btn" onclick="addRowToCart(this)">Add to Cart</button>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+  
+  <div id="lehenga1" class="details">
+    <span class="close-details" onclick="closeDetails('lehenga1')">×</span>
+    <h3>Lehenga</h3>
+    <p>Stunning lehenga set perfect for celebrations and weddings. Features beautiful embroidery and elegant designs.</p>
+    <table>
+      <tr data-product="Lehenga" data-grade="Embroidered" data-price="3500">
+        <td>Embroidered</td>
+        <td>₹3500</td>
+        <td class="cart-cell">
+          <div class="cart-cell-inner">
+            <input type="number" class="quantity-input row-qty" value="1" min="1">
+            <button class="add-to-cart-btn" onclick="addRowToCart(this)">Add to Cart</button>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<div id="kids" class="section">
+  <h2>Kids Collection</h2>
+  <div class="grid">
+    <div class="card" onclick="showDetails('kfrock1')">
+      <img src="images/kfrock1.jpg" alt="Kids Frock">
+      <div class="card-title">Kids Frock</div>
+    </div>
+    <div class="card" onclick="showDetails('kshirt1')">
+      <img src="images/kshirt1.jpg" alt="Kids Shirt">
+      <div class="card-title">Kids Shirt</div>
+    </div>
+    <div class="card" onclick="showDetails('kdenims1')">
+      <img src="images/kdenims1.jpg" alt="Kids Denims">
+      <div class="card-title">Kids Denims</div>
+    </div>
+    <div class="card" onclick="showDetails('kuniverse1')">
+      <img src="images/kuniverse1.jpg" alt="Kids Ethnic Wear">
+      <div class="card-title">Kids Ethnic Wear</div>
+    </div>
+    <div class="card" onclick="showDetails('ktraditional1')">
+      <img src="images/ktraditional1.jpg" alt="Kids Traditional">
+      <div class="card-title">Kids Traditional</div>
+    </div>
+  </div>
+  
+  <div id="kfrock1" class="details">
+    <span class="close-details" onclick="closeDetails('kfrock1')">×</span>
+    <h3>Kids Frock</h3>
+    <p>Cute and colorful frock for young girls. Made with soft, skin-friendly fabric. Perfect for everyday and special occasions.</p>
+    <table>
+      <tr data-product="Kids Frock" data-grade="Regular" data-price="399">
+        <td>Regular</td>
+        <td>₹399</td>
+        <td class="cart-cell">
+          <div class="cart-cell-inner">
+            <input type="number" class="quantity-input row-qty" value="1" min="1">
+            <button class="add-to-cart-btn" onclick="addRowToCart(this)">Add to Cart</button>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+  
+  <div id="kshirt1" class="details">
+    <span class="close-details" onclick="closeDetails('kshirt1')">×</span>
+    <h3>Kids Shirt</h3>
+    <p>Comfortable cotton shirt for kids. Available in multiple colors and patterns. Great for school and casual wear.</p>
+    <table>
+      <tr data-product="Kids Shirt" data-grade="Regular" data-price="299">
+        <td>Regular</td>
+        <td>₹299</td>
+        <td class="cart-cell">
+          <div class="cart-cell-inner">
+            <input type="number" class="quantity-input row-qty" value="1" min="1">
+            <button class="add-to-cart-btn" onclick="addRowToCart(this)">Add to Cart</button>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+  
+  <div id="kdenims1" class="details">
+    <span class="close-details" onclick="closeDetails('kdenims1')">×</span>
+    <h3>Kids Denims</h3>
+    <p>Durable and stylish denim pants for kids. Perfect for casual outings and playtime. Comfortable fit for all-day wear.</p>
+    <table>
+      <tr data-product="Kids Denims" data-grade="Regular" data-price="449">
+        <td>Regular</td>
+        <td>₹449</td>
+        <td class="cart-cell">
+          <div class="cart-cell-inner">
+            <input type="number" class="quantity-input row-qty" value="1" min="1">
+            <button class="add-to-cart-btn" onclick="addRowToCart(this)">Add to Cart</button>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+  
+  <div id="kuniverse1" class="details">
+    <span class="close-details" onclick="closeDetails('kuniverse1')">×</span>
+    <h3>Kids Ethnic Wear</h3>
+    <p>Beautiful ethnic wear for special occasions. Features traditional designs with modern comfort. Perfect for festivals.</p>
+    <table>
+      <tr data-product="Kids Ethnic Wear" data-grade="Special" data-price="899">
+        <td>Special</td>
+        <td>₹899</td>
+        <td class="cart-cell">
+          <div class="cart-cell-inner">
+            <input type="number" class="quantity-input row-qty" value="1" min="1">
+            <button class="add-to-cart-btn" onclick="addRowToCart(this)">Add to Cart</button>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+  
+  <div id="ktraditional1" class="details">
+    <span class="close-details" onclick="closeDetails('ktraditional1')">×</span>
+    <h3>Kids Traditional</h3>
+    <p>Traditional outfit for kids combining elegance with comfort. Perfect for weddings and cultural events.</p>
+    <table>
+      <tr data-product="Kids Traditional" data-grade="Premium" data-price="1299">
+        <td>Premium</td>
+        <td>₹1299</td>
+        <td class="cart-cell">
+          <div class="cart-cell-inner">
+            <input type="number" class="quantity-input row-qty" value="1" min="1">
+            <button class="add-to-cart-btn" onclick="addRowToCart(this)">Add to Cart</button>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<div id="contact" class="section">
+  <h2>Get in Touch</h2>
+  <div class="contact-box">
+    <p>Have questions about our products? Want to place a custom order? We're here to help!</p>
+    <p>📞 Contact us on WhatsApp or fill out the form below.</p>
+    <a href="https://wa.me/919890798935" target="_blank" class="wa-btn">💬 Chat on WhatsApp</a>
+  </div>
+  
+  <div class="form-section">
+    <h3>Contact Us</h3>
+    <div class="success-message" id="successMessage">Thank you! We'll get back to you soon.</div>
+    <div class="form-info">📧 All inquiries will be responded to within 24 hours.</div>
+    <form id="contactForm">
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" required>
+      </div>
+      <div class="form-group">
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" required></textarea>
+      </div>
+      <button type="submit" class="form-btn">Send Message</button>
+    </form>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2024 Vedisha Cloth Store. All rights reserved. | Premium Ladies & Kids Fashion</p>
+</footer>
+
+<!-- Cart Modal -->
+<div id="cartModal" class="modal">
+  <div class="modal-content">
+    <span class="close-modal" onclick="closeModal('cartModal')">×</span>
+    <h3>Shopping Cart</h3>
+    <div id="cartItems"></div>
+    <div id="cartSummary" class="cart-summary">
+      <div class="cart-total"></div>
+    </div>
+    <button id="checkoutBtn" class="checkout-btn" onclick="proceedToCheckout()">Proceed to Checkout</button>
+  </div>
+</div>
+
+<!-- Payment Modal -->
+<div id="paymentModal" class="modal">
+  <div class="modal-content">
+    <span class="close-modal" onclick="closeModal('paymentModal')">×</span>
+    <h3>Payment Options</h3>
+    <div id="payAmount" class="pay-amount"></div>
+    
+    <div class="pay-option">
+      <h4>UPI Payment</h4>
+      <p class="pay-note">Scan QR code or click button to pay</p>
+      <img id="upiQr" class="upi-qr" src="" alt="UPI QR Code">
+      <br><br>
+      <a id="upiPayLink" href="#" target="_blank" class="upi-pay-btn">Pay with UPI</a>
+    </div>
+    
+    <div class="pay-option">
+      <h4>Customer Details</h4>
+      <input type="text" id="payName" placeholder="Enter your name" required>
+      <input type="tel" id="payMobile" placeholder="Enter 10-digit mobile number" pattern="[0-9]{10}" required>
+      <button class="pay-done-btn" onclick="sendOrderViaWhatsApp()">Send Order via WhatsApp</button>
+    </div>
+  </div>
+</div>
+
+<a href="https://wa.me/919890798935" target="_blank" class="whatsapp-float">💬 WhatsApp</a>
+
+<script>
+let cart = JSON.parse(localStorage.getItem('vedishaCart')) || [];
+// TODO: replace with real UPI ID
+const UPI_ID = 'yourupiid@bank';
+// TODO: set to the bank-provided QR image URL; if set, it is shown instead of the generated temporary QR
+const UPI_QR_IMAGE_URL = '';
+const WA_BUSINESS_NUMBER = '919890798935';
+
+function saveCart() {
+  localStorage.setItem('vedishaCart', JSON.stringify(cart));
+  updateCartCount();
+}
+
+function updateCartCount() {
+  const cartCount = document.querySelector('.cart-count');
+  if (cartCount) {
+    cartCount.textContent = cart.length;
+  }
+}
+
+function addRowToCart(btn) {
+  const row = btn.closest('tr');
+  const productName = row.dataset.product;
+  const grade = row.dataset.grade;
+  const price = row.dataset.price;
+  const qtyInput = row.querySelector('.row-qty');
+  const quantity = Math.max(1, parseInt(qtyInput.value) || 1);
+  const existingItem = cart.find(item => item.productName === productName && item.grade === grade);
+
+  if (existingItem) {
+    existingItem.quantity += quantity;
+  } else {
+    cart.push({ productName, grade, price, quantity });
+  }
+
+  saveCart();
+
+  const original = btn.textContent;
+  btn.textContent = 'Added ✓';
+  btn.classList.add('added');
+  setTimeout(() => {
+    btn.textContent = original;
+    btn.classList.remove('added');
+  }, 1200);
+}
+
+function removeFromCart(index) {
+  cart.splice(index, 1);
+  saveCart();
+  displayCart();
+}
+
+function displayCart() {
+  const cartContainer = document.getElementById('cartItems');
+  if (cart.length === 0) {
+    cartContainer.innerHTML = '<div class="empty-cart">Your cart is empty</div>';
+    document.getElementById('cartSummary').style.display = 'none';
+    document.getElementById('checkoutBtn').style.display = 'none';
+    return;
+  }
+
+  document.getElementById('cartSummary').style.display = 'block';
+  document.getElementById('checkoutBtn').style.display = 'block';
+
+  let html = '';
+  let total = 0;
+
+  cart.forEach((item, index) => {
+    const itemTotal = parseFloat(item.price) * item.quantity;
+    total += itemTotal;
+    html += `
+      <div class="cart-item">
+        <div class="cart-item-info">
+          <div class="cart-item-name">${item.productName}</div>
+          <div class="cart-item-details">
+            Grade: ${item.grade} | Price: ₹${item.price} | Qty: ${item.quantity}
+          </div>
+          <div class="cart-item-details">Subtotal: ₹${itemTotal.toFixed(2)}</div>
+        </div>
+        <div class="cart-item-actions">
+          <button class="remove-item-btn" onclick="removeFromCart(${index})">Remove</button>
+        </div>
+      </div>
+    `;
+  });
+
+  cartContainer.innerHTML = html;
+  document.querySelector('.cart-total').innerHTML = `Total: ₹${total.toFixed(2)}`;
+}
+
+function openCart() {
+  displayCart();
+  openModal('cartModal');
+}
+
+function getCartTotal() {
+  return cart.reduce((sum, item) => sum + parseFloat(item.price) * item.quantity, 0);
+}
+
+function buildUpiUrl(total) {
+  return `upi://pay?pa=${encodeURIComponent(UPI_ID)}&pn=${encodeURIComponent('Vedisha')}&am=${encodeURIComponent(total.toFixed(2))}&cu=INR&tn=${encodeURIComponent('Vedisha order')}`;
+}
+
+function buildOrderSummary() {
+  return cart.map(item => {
+    const itemTotal = parseFloat(item.price) * item.quantity;
+    return `${item.productName} (${item.grade}): ${item.quantity} @ ₹${item.price} = ₹${itemTotal.toFixed(2)}`;
+  }).join('\n');
+}
+
+function proceedToCheckout() {
+  if (cart.length === 0) {
+    alert('Your cart is empty!');
+    return;
+  }
+
+  const total = getCartTotal();
+  const upiUrl = buildUpiUrl(total);
+
+  document.getElementById('payAmount').textContent = `Amount due: ₹${total.toFixed(2)}`;
+  document.getElementById('upiQr').src = UPI_QR_IMAGE_URL ||
+    `https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=${encodeURIComponent(upiUrl)}`;
+  document.getElementById('upiPayLink').href = upiUrl;
+
+  closeModal('cartModal');
+  openModal('paymentModal');
+}
+
+function getCustomerMobile() {
+  const name = document.getElementById('payName').value.trim();
+  const mobile = document.getElementById('payMobile').value.replace(/[\s-]/g, '');
+  if (!name) {
+    alert('Please enter your name.');
+    return null;
+  }
+  if (!/^[6-9]\d{9}$/.test(mobile)) {
+    alert('Please enter a valid 10-digit mobile number.');
+    return null;
+  }
+  return { name, mobile: '91' + mobile };
+}
+
+function buildOrderMessage(customer, total) {
+  return `Hi ${customer.name},\n\nThank you for your order at Vedisha!\n\nOrder Summary:\n\n${buildOrderSummary()}\n\nTotal: ₹${total.toFixed(2)}\n\nPlease confirm your order and proceed with payment.\n\nThank you!`;
+}
+
+function sendOrderViaWhatsApp() {
+  const customer = getCustomerMobile();
+  if (!customer) return;
+
+  const total = getCartTotal();
+  const message = buildOrderMessage(customer, total);
+  const encodedMessage = encodeURIComponent(message);
+  const whatsappUrl = `https://wa.me/${customer.mobile}?text=${encodedMessage}`;
+  window.open(whatsappUrl, '_blank');
+
+  cart = [];
+  saveCart();
+  alert('Order sent successfully! Our team will contact you shortly.');
+  closeModal('paymentModal');
+}
+
+function showDetails(id) {
+  document.getElementById(id).classList.add('active');
+}
+
+function closeDetails(id) {
+  document.getElementById(id).classList.remove('active');
+}
+
+function openModal(id) {
+  document.getElementById(id).style.display = 'block';
+}
+
+function closeModal(id) {
+  document.getElementById(id).style.display = 'none';
+}
+
+function scrollToSection(id) {
+  const section = document.getElementById(id);
+  if (section) {
+    section.scrollIntoView({ behavior: 'smooth' });
+  }
+}
+
+// Contact Form Handler
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const phone = document.getElementById('phone').value;
+  const subject = document.getElementById('subject').value;
+  const message = document.getElementById('message').value;
+  
+  const mailtoLink = `mailto:your-email@example.com?subject=${encodeURIComponent(subject)}&body=Name: ${encodeURIComponent(name)}%0AEmail: ${encodeURIComponent(email)}%0APhone: ${encodeURIComponent(phone)}%0A%0AMessage:%0A${encodeURIComponent(message)}`;
+  
+  window.location.href = mailtoLink;
+  
+  document.getElementById('successMessage').style.display = 'block';
+  setTimeout(() => {
+    document.getElementById('successMessage').style.display = 'none';
+  }, 3000);
+  
+  this.reset();
+});
+
+// Initialize cart count on page load
+updateCartCount();
+</script>
+
+</body>
+</html>
