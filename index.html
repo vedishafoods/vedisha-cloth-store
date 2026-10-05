@@ -144,6 +144,7 @@ h3 {
   cursor: pointer;
   transition: transform 0.2s ease;
   border: 1px solid rgba(0,0,0,0.04);
+  position: relative;
 }
 
 .card:hover {
@@ -165,6 +166,21 @@ h3 {
   color: #8B4513;
   background: #f3f3f3;
   font-size: 18px;
+}
+
+.card-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 28px;
+  background: rgba(255, 255, 255, 0.9);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
 }
 
 .details {
@@ -897,23 +913,48 @@ footer {
   <div class="grid">
     <div class="card" onclick="showDetails('saree1')">
       <img src="traditionalsaree.jpg" alt="Traditional Saree">
+      <div class="card-icon">🥻</div>
       <div class="card-title">Traditional Saree</div>
     </div>
     <div class="card" onclick="showDetails('saree2')">
       <img src="silksaree.jpg" alt="Silk Saree">
+      <div class="card-icon">✨</div>
       <div class="card-title">Silk Saree</div>
     </div>
     <div class="card" onclick="showDetails('suit1')">
       <img src="kurtasuite.jpg" alt="Kurta Suit">
+      <div class="card-icon">👗</div>
       <div class="card-title">Kurta Suit</div>
     </div>
     <div class="card" onclick="showDetails('dress1')">
       <img src="casualdress.jpg" alt="Casual Dress">
+      <div class="card-icon">👚</div>
       <div class="card-title">Casual Dress</div>
     </div>
     <div class="card" onclick="showDetails('lehenga1')">
       <img src="lehnga.jpg" alt="Lehenga">
+      <div class="card-icon">💃</div>
       <div class="card-title">Lehenga</div>
+    </div>
+    <div class="card" onclick="showDetails('kurti1')">
+      <img src="casualdress.jpg" alt="Short Kurti">
+      <div class="card-icon">👕</div>
+      <div class="card-title">Short Kurti</div>
+    </div>
+    <div class="card" onclick="showDetails('coordset1')">
+      <img src="casualdress.jpg" alt="Coord Set">
+      <div class="card-icon">🌟</div>
+      <div class="card-title">Coord Set</div>
+    </div>
+    <div class="card" onclick="showDetails('winter1')">
+      <img src="casualdress.jpg" alt="Winter Cloth">
+      <div class="card-icon">❄️</div>
+      <div class="card-title">Winter Cloth</div>
+    </div>
+    <div class="card" onclick="showDetails('purse1')">
+      <img src="casualdress.jpg" alt="Ladies Purse">
+      <div class="card-icon">👜</div>
+      <div class="card-title">Ladies Purse</div>
     </div>
   </div>
   
@@ -1006,6 +1047,78 @@ footer {
       </tr>
     </table>
   </div>
+
+  <div id="kurti1" class="details">
+    <span class="close-details" onclick="closeDetails('kurti1')">×</span>
+    <h3>Short Kurti</h3>
+    <p>Comfortable and stylish short kurti perfect for everyday wear. Available in various colors and designs with breathable fabric.</p>
+    <table>
+      <tr data-product="Short Kurti" data-grade="Regular" data-price="499">
+        <td>Regular</td>
+        <td>₹499</td>
+        <td class="cart-cell">
+          <div class="cart-cell-inner">
+            <input type="number" class="quantity-input row-qty" value="1" min="1">
+            <button class="add-to-cart-btn" onclick="addRowToCart(this)">Add to Cart</button>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div id="coordset1" class="details">
+    <span class="close-details" onclick="closeDetails('coordset1')">×</span>
+    <h3>Coord Set</h3>
+    <p>Trendy coordination set featuring a matching top and bottom. Perfect for casual outings and social gatherings with modern style.</p>
+    <table>
+      <tr data-product="Coord Set" data-grade="Standard" data-price="1099">
+        <td>Standard</td>
+        <td>₹1099</td>
+        <td class="cart-cell">
+          <div class="cart-cell-inner">
+            <input type="number" class="quantity-input row-qty" value="1" min="1">
+            <button class="add-to-cart-btn" onclick="addRowToCart(this)">Add to Cart</button>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div id="winter1" class="details">
+    <span class="close-details" onclick="closeDetails('winter1')">×</span>
+    <h3>Winter Cloth</h3>
+    <p>Warm and cozy winter collection featuring stylish designs. Made with premium winter fabrics to keep you comfortable in cold weather.</p>
+    <table>
+      <tr data-product="Winter Cloth" data-grade="Premium" data-price="1499">
+        <td>Premium</td>
+        <td>₹1499</td>
+        <td class="cart-cell">
+          <div class="cart-cell-inner">
+            <input type="number" class="quantity-input row-qty" value="1" min="1">
+            <button class="add-to-cart-btn" onclick="addRowToCart(this)">Add to Cart</button>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div id="purse1" class="details">
+    <span class="close-details" onclick="closeDetails('purse1')">×</span>
+    <h3>Ladies Purse</h3>
+    <p>Elegant ladies purse with premium finish. Spacious compartments and stylish design. Perfect accessory for any occasion.</p>
+    <table>
+      <tr data-product="Ladies Purse" data-grade="Premium" data-price="799">
+        <td>Premium</td>
+        <td>₹799</td>
+        <td class="cart-cell">
+          <div class="cart-cell-inner">
+            <input type="number" class="quantity-input row-qty" value="1" min="1">
+            <button class="add-to-cart-btn" onclick="addRowToCart(this)">Add to Cart</button>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
 </div>
 
 <div id="kids" class="section">
@@ -1013,22 +1126,27 @@ footer {
   <div class="grid">
     <div class="card" onclick="showDetails('kidshirt1')">
       <img src="kidsshirt.jpg" alt="Kids Shirt">
+      <div class="card-icon">👕</div>
       <div class="card-title">Kids Shirt</div>
     </div>
     <div class="card" onclick="showDetails('kidsdenim1')">
       <img src="kidsdenim.jpg" alt="Kids Denim">
+      <div class="card-icon">👖</div>
       <div class="card-title">Kids Denim</div>
     </div>
     <div class="card" onclick="showDetails('kidsfrock1')">
       <img src="kidsfrok.jpg" alt="Kids Frock">
+      <div class="card-icon">👗</div>
       <div class="card-title">Kids Frock</div>
     </div>
     <div class="card" onclick="showDetails('kidstraditional1')">
       <img src="kidstraditional.jpg" alt="Kids Traditional Wear">
+      <div class="card-icon">🥻</div>
       <div class="card-title">Kids Traditional Wear</div>
     </div>
     <div class="card" onclick="showDetails('kidsethnic1')">
       <img src="kidsethnicwear.jpg" alt="Kids Ethnic Wear">
+      <div class="card-icon">✨</div>
       <div class="card-title">Kids Ethnic Wear</div>
     </div>
   </div>
