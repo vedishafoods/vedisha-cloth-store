@@ -112,6 +112,11 @@ h3 { font-size: 24px; }
   color: #1a1a1a;
   max-width: 100%;
 }
+.about .home-title,
+.about .about-title {
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
 .grid {
   display: grid;
   grid-template-columns: repeat(5, minmax(200px, 1fr));
@@ -424,6 +429,8 @@ footer { background: #8B4513; color: white; text-align: center; padding: 20px; f
   h3 { font-size: 20px; }
   .section { padding: 25px 12px; }
   .about p { font-size: 16px; line-height: 1.6; }
+  .about .home-title,
+  .about .about-title { line-height: 1.5; margin-bottom: 18px; }
   .card-title { font-size: 16px; padding: 12px 8px; }
   table { font-size: 16px; }
   th, td { padding: 8px; }
@@ -452,6 +459,8 @@ footer { background: #8B4513; color: white; text-align: center; padding: 20px; f
   h3 { font-size: 18px; }
   .section { padding: 20px 10px; }
   .about p { font-size: 15px; line-height: 1.5; }
+  .about .home-title,
+  .about .about-title { line-height: 1.5; margin-bottom: 16px; }
   .card-title { font-size: 14px; padding: 10px 6px; }
   .details p { font-size: 15px; }
   table { font-size: 14px; }
@@ -507,88 +516,6 @@ footer { background: #8B4513; color: white; text-align: center; padding: 20px; f
       <li>Fast and reliable delivery</li>
       <li>Excellent customer service</li>
     </ul>
-  </div>
-</div>
-
-<div id="ladies" class="section">
-  <h2>Ladies Collection</h2>
-  <div class="grid">
-    <div class="card" onclick="showDetails('saree1')">
-      <img src="traditionalsaree.jpg" alt="Traditional Saree">
-      <div class="card-icon">🥻</div>
-      <div class="card-title">Traditional Saree</div>
-    </div>
-    <div class="card" onclick="showDetails('saree2')">
-      <img src="silksaree.jpg" alt="Silk Saree">
-      <div class="card-icon">✨</div>
-      <div class="card-title">Silk Saree</div>
-    </div>
-    <div class="card" onclick="showDetails('suit1')">
-      <img src="kurtasuite.jpg" alt="Kurta Suit">
-      <div class="card-icon">👗</div>
-      <div class="card-title">Kurta Suit</div>
-    </div>
-    <div class="card" onclick="showDetails('dress1')">
-      <img src="casualdress.jpg" alt="Casual Dress">
-      <div class="card-icon">👚</div>
-      <div class="card-title">Casual Dress</div>
-    </div>
-    <div class="card" onclick="showDetails('lehenga1')">
-      <img src="lehnga.jpg" alt="Lehenga">
-      <div class="card-icon">💃</div>
-      <div class="card-title">Lehenga</div>
-    </div>
-    <div class="card" onclick="showDetails('kurti1')">
-      <img src="shortkurti.jpg" alt="Short Kurti">
-      <div class="card-icon">👕</div>
-      <div class="card-title">Short Kurti</div>
-    </div>
-    <div class="card" onclick="showDetails('coordset1')">
-      <img src="coordset.jpg" alt="Coord Set">
-      <div class="card-icon">🌟</div>
-      <div class="card-title">Coord Set</div>
-    </div>
-    <div class="card" onclick="showDetails('winter1')">
-      <img src="wintercloth.jpg" alt="Winter Cloth">
-      <div class="card-icon">❄️</div>
-      <div class="card-title">Winter Cloth</div>
-    </div>
-    <div class="card" onclick="showDetails('purse1')">
-      <img src="purse.jpg" alt="Ladies Purse">
-      <div class="card-icon">👜</div>
-      <div class="card-title">Ladies Purse</div>
-    </div>
-  </div>
-</div>
-
-<div id="kids" class="section">
-  <h2>Kids Collection</h2>
-  <div class="grid">
-    <div class="card" onclick="showDetails('kids1')">
-      <img src="kidstraditional.jpg" alt="Kids Traditional">
-      <div class="card-icon">🧵</div>
-      <div class="card-title">Kids Traditional</div>
-    </div>
-    <div class="card" onclick="showDetails('kids2')">
-      <img src="kidsethnicwear.jpg" alt="Kids Ethnic Wear">
-      <div class="card-icon">🌸</div>
-      <div class="card-title">Kids Ethnic Wear</div>
-    </div>
-    <div class="card" onclick="showDetails('kids3')">
-      <img src="kidsdenim.jpg" alt="Kids Denim">
-      <div class="card-icon">👖</div>
-      <div class="card-title">Kids Denim</div>
-    </div>
-    <div class="card" onclick="showDetails('kids4')">
-      <img src="kidsshirt.jpg" alt="Kids Shirt">
-      <div class="card-icon">👔</div>
-      <div class="card-title">Kids Shirt</div>
-    </div>
-    <div class="card" onclick="showDetails('kids5')">
-      <img src="kidsfrok.jpg" alt="Kids Frok">
-      <div class="card-icon">🎀</div>
-      <div class="card-title">Kids Frok</div>
-    </div>
   </div>
 </div>
 
