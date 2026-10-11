@@ -133,7 +133,7 @@ h3 { font-size: 24px; }
   position: relative;
 }
 .card:hover { transform: translateY(-2px); }
-.card img { width: 100%; height: 220px; object-fit: cover; display: block; background: #f5f5f5; }
+.card img { width: 100%; aspect-ratio: 4 / 5; object-fit: contain; display: block; background: #f5f1ed; }
 .card-title {
   padding: 16px 12px;
   text-align: center;
@@ -484,21 +484,22 @@ footer { background: #8B4513; color: white; text-align: center; padding: 20px; f
 <header>
   <img src="logo.png" alt="Vedisha Cloth Store Logo">
   <div class="cart-icon-container">
-    <span class="cart-icon" onclick="openCart()">🛒</span>
-    <span class="cart-count">0</span>
+    <a class="cart-icon" href="#contact" aria-label="Go to contact and ordering information">🛒</a>
   </div>
   <nav>
-    <a onclick="scrollToSection('home')">Home</a>
-    <a onclick="scrollToSection('about')">About</a>
-    <a onclick="scrollToSection('ladies')">Ladies</a>
-    <a onclick="scrollToSection('kids')">Kids</a>
-    <a onclick="scrollToSection('contact')">Contact</a>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#ladies">Ladies</a>
+    <a href="#kids">Kids</a>
+    <a href="#contact">Contact</a>
   </nav>
 </header>
 
 <div id="home" class="section">
   <h2>Welcome to Vedisha Cloth Store</h2>
-  <div class="about"></div>
+  <div class="about">
+    <p>Discover clothing for every age and occasion, from sarees and kurtis to comfortable kids’ styles. Browse our collections below and contact us for orders or questions.</p>
+  </div>
 </div>
 
 <div id="about" class="section">
@@ -521,16 +522,40 @@ footer { background: #8B4513; color: white; text-align: center; padding: 20px; f
   <h2>Ladies Collection</h2>
   <div class="grid">
     <div class="card">
-      <img src="https://via.placeholder.com/600x400?text=Ladies+Wear+1" alt="Ladies Wear 1">
-      <div class="card-title">Sarees</div>
+      <img src="traditionalsaree.jpg" alt="Traditional saree" loading="lazy" decoding="async">
+      <div class="card-title">Traditional Saree</div>
     </div>
     <div class="card">
-      <img src="https://via.placeholder.com/600x400?text=Ladies+Wear+2" alt="Ladies Wear 2">
-      <div class="card-title">Kurtis</div>
+      <img src="silksaree.jpg" alt="Silk saree" loading="lazy" decoding="async">
+      <div class="card-title">Silk Saree</div>
     </div>
     <div class="card">
-      <img src="https://via.placeholder.com/600x400?text=Ladies+Wear+3" alt="Ladies Wear 3">
-      <div class="card-title">Ethnic Sets</div>
+      <img src="shortkurti.jpg" alt="Short kurti" loading="lazy" decoding="async">
+      <div class="card-title">Short Kurti</div>
+    </div>
+    <div class="card">
+      <img src="kurtasuite.jpg" alt="Kurta suit" loading="lazy" decoding="async">
+      <div class="card-title">Kurta Suit</div>
+    </div>
+    <div class="card">
+      <img src="lehnga.jpg" alt="Lehenga" loading="lazy" decoding="async">
+      <div class="card-title">Lehenga</div>
+    </div>
+    <div class="card">
+      <img src="casualdress.jpg" alt="Casual dress" loading="lazy" decoding="async">
+      <div class="card-title">Casual Dress</div>
+    </div>
+    <div class="card">
+      <img src="coordset.jpg" alt="Co-ord set" loading="lazy" decoding="async">
+      <div class="card-title">Co-ord Set</div>
+    </div>
+    <div class="card">
+      <img src="wintercloth.jpg" alt="Winter clothing" loading="lazy" decoding="async">
+      <div class="card-title">Winter Wear</div>
+    </div>
+    <div class="card">
+      <img src="purse.jpg" alt="Ladies purse" loading="lazy" decoding="async">
+      <div class="card-title">Purse</div>
     </div>
   </div>
 </div>
@@ -539,16 +564,24 @@ footer { background: #8B4513; color: white; text-align: center; padding: 20px; f
   <h2>Kids Collection</h2>
   <div class="grid">
     <div class="card">
-      <img src="https://via.placeholder.com/600x400?text=Kids+Wear+1" alt="Kids Wear 1">
-      <div class="card-title">Girls Wear</div>
+      <img src="kidsfrok.jpg" alt="Girls’ frock" loading="lazy" decoding="async">
+      <div class="card-title">Girls’ Frock</div>
     </div>
     <div class="card">
-      <img src="https://via.placeholder.com/600x400?text=Kids+Wear+2" alt="Kids Wear 2">
-      <div class="card-title">Boys Wear</div>
+      <img src="kidsshirt.jpg" alt="Kids’ shirt" loading="lazy" decoding="async">
+      <div class="card-title">Kids’ Shirt</div>
     </div>
     <div class="card">
-      <img src="https://via.placeholder.com/600x400?text=Kids+Wear+3" alt="Kids Wear 3">
-      <div class="card-title">Party Wear</div>
+      <img src="kidsdenim.jpg" alt="Kids’ denim outfit" loading="lazy" decoding="async">
+      <div class="card-title">Kids’ Denim</div>
+    </div>
+    <div class="card">
+      <img src="kidsethnicwear.jpg" alt="Kids’ ethnic wear" loading="lazy" decoding="async">
+      <div class="card-title">Kids’ Ethnic Wear</div>
+    </div>
+    <div class="card">
+      <img src="kidstraditional.jpg" alt="Kids’ traditional outfit" loading="lazy" decoding="async">
+      <div class="card-title">Kids’ Traditional Wear</div>
     </div>
   </div>
 </div>
@@ -559,9 +592,11 @@ footer { background: #8B4513; color: white; text-align: center; padding: 20px; f
     <p>Reach us on WhatsApp for orders, custom queries, and quick support.</p>
     <p><strong>Email:</strong> <a href="mailto:vedprish20162021@gmail.com">vedprish20162021@gmail.com</a></p>
     <p><strong>Contact Number:</strong> <a href="tel:+919890798935">9890798935</a></p>
-    <a class="wa-btn" href="https://wa.me/919999999999" target="_blank" rel="noopener">Chat on WhatsApp</a>
+    <a class="wa-btn" href="https://wa.me/919890798935" target="_blank" rel="noopener">Chat on WhatsApp</a>
   </div>
 </div>
+
+<footer>© Vedisha Cloth Store. Contact us for orders and enquiries.</footer>
 
 </body>
 </html>
